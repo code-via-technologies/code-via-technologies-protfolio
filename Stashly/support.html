@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Stashly</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1c2b45;
+            border-bottom: 3px solid #3884ff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2a3c5a;
+            margin-top: 30px;
+        }
+        .intro {
+            background: #eef4ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #3884ff;
+            margin: 20px 0;
+        }
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .contact-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .contact-card h3 {
+            margin-top: 0;
+            color: #3884ff;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #1c2b45;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #555;
+            padding-left: 10px;
+            border-left: 3px solid #3884ff;
+        }
+        .faq-answer ul, .faq-answer ol {
+            margin: 10px 0;
+        }
+        .faq-answer li {
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #3884ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .response-time {
+            background: #eef4ff;
+            border: 1px solid #c7d9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .response-time strong {
+            color: #1c2b45;
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        footer a {
+            color: #3884ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stashly Support</h1>
+
+    <div class="intro">
+        <p>
+            <strong>Welcome to Stashly Support!</strong> Stashly keeps the text you retype
+            and puts it one tap away in any app, through its own keyboard.
+        </p>
+    </div>
+
+    <div class="response-time">
+        <strong>We typically respond within 48 hours</strong>
+    </div>
+
+    <h2>Contact Us</h2>
+    <div class="contact-options">
+        <div class="contact-card">
+            <h3>Email Support</h3>
+            <p><a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a></p>
+            <p>For questions, bug reports, or feature requests.</p>
+        </div>
+    </div>
+
+    <h2>Setting up the keyboard</h2>
+    <div class="faq-answer">
+        <ol>
+            <li>Open <strong>Settings &rsaquo; General &rsaquo; Keyboard &rsaquo; Keyboards</strong>.</li>
+            <li>Tap <strong>Add New Keyboard…</strong> and choose <strong>Stashly</strong>.</li>
+            <li>Tap <strong>Stashly Keyboard</strong> in the list and turn on <strong>Allow Full Access</strong>.</li>
+        </ol>
+        <p>
+            To use it, tap into any text field, press and hold the 🌐 globe key, and pick
+            Stashly. Tap any clip to insert it.
+        </p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">Why does the keyboard need "Allow Full Access"?</div>
+        <div class="faq-answer">
+            Your saved clips live in a private container shared between the Stashly app and
+            its keyboard. iOS only lets an extension reach a shared container when Full
+            Access is on. Stashly does not record what you type, and it contains no
+            networking code at all, so nothing can be sent anywhere.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Why doesn't Stashly save everything I copy automatically?</div>
+        <div class="faq-answer">
+            iOS does not allow any app to watch the clipboard in the background — this is an
+            Apple privacy restriction that applies to every app, not a Stashly limitation.
+            You save an item deliberately: tap <strong>Paste</strong> in the Stashly
+            keyboard, or send it to Stashly through the Share Sheet.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What's the difference between snippets and history?</div>
+        <div class="faq-answer">
+            <ul>
+                <li><strong>Snippets</strong> are pinned. They never expire — use them for
+                    your address, signature, or replies you send often.</li>
+                <li><strong>History</strong> is recent clips, kept for the period you choose
+                    in Settings (one day up to a month), then removed automatically.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Why can't I insert an image from the keyboard?</div>
+        <div class="faq-answer">
+            iOS keyboards can only insert text — Apple provides no way for a keyboard to
+            place an image or file into another app's field. Tapping an image or file in
+            Stashly copies it to your clipboard instead; then long-press the field and
+            choose Paste.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What does Stashly Pro include?</div>
+        <div class="faq-answer">
+            Unlimited clips, plus images and files. It is a one-time purchase, not a
+            subscription. If you reinstall or change device, use
+            <strong>Settings &rsaquo; Restore Purchase</strong> in the app.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Where is my data stored?</div>
+        <div class="faq-answer">
+            Only on your iPhone, in Stashly's private container. Nothing is uploaded, synced,
+            or shared. See our <a href="privacy-policy.html">Privacy Policy</a>.
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | <a href="mailto:tom.weiss.t@gmail.com">Contact</a> | <a href="../index.html">All Apps</a>
+        </p>
+        <p style="margin-top: 10px;">© 2026 Code VIA Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
