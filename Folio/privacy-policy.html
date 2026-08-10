@@ -67,18 +67,60 @@
 </head>
 <body>
     <h1>Privacy Policy for Folio</h1>
-    <p class="last-updated">Effective July 2026</p>
+    <p class="last-updated">Last updated: August 10, 2026</p>
 
     <div class="highlight">
-        <strong>Quick summary:</strong> Folio has no accounts and no servers of our own. Your
-        notes are stored on your device and, if you enable iCloud, synced privately through
-        your own Apple account.
+        <strong>Quick summary:</strong> Folio has no accounts and no advertising. Your notes are
+        stored on your device and, if you enable iCloud, synced privately through your own Apple
+        account. Separately, the app sends anonymous usage analytics — on by default, off with
+        one tap in Settings — to a server we operate. See "Usage analytics" below for exactly
+        what that is.
     </div>
 
     <h2>What we collect</h2>
     <p>
-        <strong>Nothing.</strong> Folio has no accounts, no analytics, and no advertising. We
-        cannot see your notes, photos, or attachments.
+        <strong>Your notes: nothing.</strong> Folio has no accounts and no advertising. We cannot
+        see your notes, photos, or attachments — that content never leaves your device except
+        through your own iCloud sync.
+    </p>
+    <p>
+        Separately, Folio sends anonymous usage analytics to a server we operate ourselves. This
+        is a small, fixed set of events with no free-text fields — it never includes the content
+        of your notes. Details are in the next section.
+    </p>
+
+    <h2>Usage analytics</h2>
+    <p>
+        Folio sends anonymous, on-by-default usage analytics to a server we operate. It is a
+        short list of events, and nothing else:
+    </p>
+    <ul>
+        <li><strong>app_open</strong> — with a flag for whether it was a cold start</li>
+        <li><strong>first_launch</strong></li>
+        <li><strong>purchase</strong> — product id, transaction id, and whether it was a purchase
+            or a restore</li>
+        <li><strong>paywall_view</strong> — where the paywall was shown from</li>
+        <li><strong>feature_used</strong> — the name of a feature, from a fixed list we define</li>
+        <li><strong>error</strong> — an error domain and a numeric code</li>
+        <li><strong>opt_out</strong> — recorded when you turn analytics off</li>
+    </ul>
+    <p>
+        Alongside each event we record a random ID generated on your device when you first
+        install the app — not an Apple device identifier, not shared with any other app, and not
+        linked to your identity — plus app version, iOS version, device model (e.g.
+        "iPhone16,2"), language, and your 2-letter country. <strong>There are no free-text
+        fields.</strong> Analytics never sees the text of your notes, your photos or
+        attachments, or anything else you've typed.
+    </p>
+    <p>
+        We do not store IP addresses, even in logs; an IP is hashed with a key that rotates
+        daily, used only to rate-limit abuse, and then discarded. Raw events are deleted after 90
+        days. Analytics never goes to an ad network, an analytics SDK, or any other third party —
+        it goes to a server we operate ourselves and nowhere else. Nothing is sold or shared.
+    </p>
+    <p>
+        You can turn analytics off at any time in the app's Settings. Opting out stops new events
+        from being sent and deletes the events already collected from your install.
     </p>
 
     <h2>Where your data lives</h2>
