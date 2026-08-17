@@ -67,18 +67,59 @@
 </head>
 <body>
     <h1>Privacy Policy for Stride</h1>
-    <p class="last-updated">Effective July 2026</p>
+    <p class="last-updated">Last updated: August 17, 2026</p>
 
     <div class="highlight">
-        <strong>Quick summary:</strong> Stride has no accounts and no servers. Your step data
-        stays on your iPhone. Health access is read-only — Stride never writes to your
-        Apple Health data.
+        <strong>Quick summary:</strong> Stride has no accounts. Your step data stays on your
+        iPhone, and Health access is read-only — Stride never writes to your Apple Health
+        data. Separately, the app sends anonymous usage analytics — on by default, off with
+        one tap in Settings — to a server we operate. See "Usage analytics" below for
+        exactly what that is.
     </div>
 
     <h2>What we collect</h2>
     <p>
-        <strong>Nothing.</strong> Stride does not have accounts, analytics, advertising, or
-        any servers of our own. We cannot see your step counts, walks, or goals.
+        <strong>Your step and health data: nothing.</strong> Stride does not have accounts
+        or advertising. We cannot see your step counts, walks, or goals — that data never
+        leaves your device.
+    </p>
+    <p>
+        Separately, Stride sends anonymous usage analytics to a server we operate ourselves.
+        This is a small, fixed set of events with no free-text fields — it never includes
+        any of the health or location data described below. Details are in the next
+        section.
+    </p>
+
+    <h2>Usage analytics</h2>
+    <p>
+        Stride sends anonymous, on-by-default usage analytics to a server we operate. It is
+        a short list of events, and nothing else:
+    </p>
+    <ul>
+        <li><strong>app_open</strong> — with a flag for whether it was a cold start</li>
+        <li><strong>first_launch</strong></li>
+        <li><strong>feature_used</strong> — the name of a feature, from a fixed list we
+            define (e.g. starting a walk or workout)</li>
+        <li><strong>error</strong> — an error domain and a numeric code</li>
+        <li><strong>opt_out</strong> — recorded when you turn analytics off</li>
+    </ul>
+    <p>
+        Alongside each event we record a random ID generated on your device when you first
+        install the app — not an Apple device identifier, not shared with any other app,
+        and not linked to your identity — plus app version, iOS version, device model (e.g.
+        "iPhone16,2"), language, and your 2-letter country. <strong>There are no free-text
+        fields.</strong> Analytics never sees your step counts, walks, goals, or location.
+    </p>
+    <p>
+        We do not store IP addresses, even in logs; an IP is hashed with a key that rotates
+        daily, used only to rate-limit abuse, and then discarded. Raw events are deleted
+        after 90 days. Analytics never goes to an ad network, an analytics SDK, or any other
+        third party — it goes to a server we operate ourselves and nowhere else. Nothing is
+        sold or shared.
+    </p>
+    <p>
+        You can turn analytics off at any time in the app's Settings. Opting out stops new
+        events from being sent and deletes the events already collected from your install.
     </p>
 
     <h2>Apple Health</h2>
