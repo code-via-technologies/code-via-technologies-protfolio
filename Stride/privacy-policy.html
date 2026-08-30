@@ -67,27 +67,47 @@
 </head>
 <body>
     <h1>Privacy Policy for Stride</h1>
-    <p class="last-updated">Last updated: August 17, 2026</p>
+    <p class="last-updated">Last updated: August 30, 2026</p>
 
     <div class="highlight">
-        <strong>Quick summary:</strong> Stride has no accounts. Your step data stays on your
-        iPhone, and Health access is read-only — Stride never writes to your Apple Health
-        data. Separately, the app sends anonymous usage analytics — on by default, off with
-        one tap in Settings — to a server we operate. See "Usage analytics" below for
-        exactly what that is.
+        <strong>Quick summary:</strong> Stride has no traditional accounts. Your step, health,
+        and location data stay on your iPhone, and Health access is read-only — Stride never
+        writes to your Apple Health data. If you join a Step Battle, your display name,
+        Battle step score (never your daily HealthKit total), Battle timestamps, a push
+        token, and an anonymous per-install identity are sent to a server we operate, so
+        your opponent can see the race and you can get notified about it — see "Step
+        Battles" below. Stride Companion needs none of that: it runs entirely on your
+        device. Separately, the app sends anonymous usage analytics — on by default, off
+        with one tap in Settings — to a server we operate, and if you use the in-app
+        Feedback form, that message goes to a third, separate server we operate. See "Usage
+        analytics" and "Feedback" below.
     </div>
 
     <h2>What we collect</h2>
     <p>
-        <strong>Your step and health data: nothing.</strong> Stride does not have accounts
-        or advertising. We cannot see your step counts, walks, or goals — that data never
-        leaves your device.
+        <strong>Your step and health data: nothing.</strong> Stride does not have traditional
+        accounts (email, password) or advertising. We cannot see your step counts, walks,
+        goals, route, or location — that data never leaves your device.
+    </p>
+    <p>
+        <strong>The one exception is Step Battles</strong>, an opt-in feature: when you create
+        or accept a Battle, Stride sends your chosen display name, your Battle step count
+        (steps since the Battle started, never your daily HealthKit total), Battle
+        timestamps, your device's push token, and an anonymous per-install identity to a
+        server we operate, so the app can show both sides of the race and notify you about
+        it. See "Step Battles" below for the full detail. Stride Companion, the solo
+        alternative, needs no server at all — see "Stride Companion" below.
     </p>
     <p>
         Separately, Stride sends anonymous usage analytics to a server we operate ourselves.
         This is a small, fixed set of events with no free-text fields — it never includes
-        any of the health or location data described below. Details are in the next
-        section.
+        any of the health or location data described below. Details are in the "Usage
+        analytics" section.
+    </p>
+    <p>
+        If you use the in-app Feedback form, the message you type is sent to a third server
+        we operate, separate from both the Battle server and the analytics server. Details
+        are in the "Feedback" section.
     </p>
 
     <h2>Usage analytics</h2>
@@ -122,6 +142,77 @@
         events from being sent and deletes the events already collected from your install.
     </p>
 
+    <h2>Step Battles</h2>
+    <p>
+        A Step Battle is a private, opt-in walking competition against one other person.
+        Creating or accepting one requires no email, password, or traditional account — just
+        a display name of your choosing, the only setup Battles requires. The app then
+        generates an anonymous identity for your install automatically.
+    </p>
+    <p>
+        Once a Battle starts, Stride sends the following to <strong>stride-battles-api</strong>,
+        a server we operate ourselves and that is entirely separate from the analytics server
+        described below:
+    </p>
+    <ul>
+        <li>The <strong>display name</strong> you chose, shown to your opponent</li>
+        <li>Your <strong>Battle step count</strong> — steps taken since you accepted that
+            specific Battle, never your daily HealthKit total or the count shown elsewhere
+            in the app</li>
+        <li><strong>Timestamps</strong> for that Battle — when it started, when it ends, and
+            when your step count was last synced — used to run the Battle and show both
+            sides an accurate, up-to-date race</li>
+        <li>Your <strong>anonymous per-install identity</strong> — a user ID, device ID, and
+            device secret generated automatically the first time you play a Battle, and
+            reused for every Battle after that. This is used only to authenticate your
+            requests and let both sides see the same race; it is not a password, and it is
+            never linked to your real name, email, or Apple ID.</li>
+        <li>Your device's <strong>push token</strong>, an anonymous identifier Apple assigns
+            your install, sent once you register for notifications so our server can alert
+            you about Battle activity (for example, that your opponent has taken the lead).
+            It is used only to deliver Battle-related notifications — never sold, shared, or
+            used for advertising.</li>
+    </ul>
+    <p>
+        <strong>Never sent:</strong> raw HealthKit samples, calories, active energy, body
+        weight, distance, your GPS route, your precise location, or your daily step total. A
+        Battle score is a number derived on your device from the moment you accepted the
+        Battle — nothing more.
+    </p>
+    <p>
+        Because a Battle score is tied to your persistent anonymous identity across the
+        Battles you play, it is linked data in that sense — but it is never linked to your
+        real name, email, Apple ID, or any other Stride data. You can see your Battle history
+        in the app's History screen, and a Battle's data is only ever used to run that Battle
+        and show your own record of past Battles.
+    </p>
+    <p>
+        <strong>Retention and deletion:</strong> completed Battle records (display names,
+        scores, timestamps, and your anonymous identity) remain on our server indefinitely —
+        we do not currently run an automated process that deletes old Battles. If you'd like
+        your Battle history and identity deleted, email us at the address in "Contact Us"
+        below and we will remove it by hand.
+    </p>
+
+    <h2>Stride Companion</h2>
+    <p>
+        Stride Companion — "race your daily pace" — is the solo counterpart to a Step Battle.
+        It has no server at all: your pace curve is built from your own recent step history,
+        entirely on your device, using your existing HealthKit access. Nothing about
+        Companion — your pace, your progress, or that you use it — is ever transmitted
+        anywhere.
+    </p>
+
+    <h2>Feedback</h2>
+    <p>
+        Stride has an in-app Feedback form (Settings → Send Feedback) so you can reach us
+        directly. If you use it, the message you type — plus your app version and iOS
+        version, so we can reproduce what you're describing — is sent to a server we operate
+        and relayed privately to us; it is not batched with usage analytics and never
+        includes your health, location, or Battle data. Nothing is sent unless you choose to
+        send it.
+    </p>
+
     <h2>Apple Health</h2>
     <p>
         Stride reads your daily step total from Apple Health so it can show your progress
@@ -141,8 +232,11 @@
 
     <h2>Where your data lives</h2>
     <p>
-        Step counts, walk history, and your daily goal are stored locally on your iPhone.
-        Nothing is synced to iCloud or any other service, and nothing leaves your device.
+        Step counts, walk history, routes, and your daily goal are stored locally on your
+        iPhone. Nothing is synced to iCloud or any other service. The only data that ever
+        leaves your device is what's described above: your Step Battle display name, score,
+        timestamps, and push token (only if you join a Battle), anonymous usage analytics
+        (only if you leave it on), and a feedback message (only if you choose to send one).
     </p>
 
     <h2>Live Activities and Lock Screen</h2>
