@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Byheart</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1c2b45;
+            border-bottom: 3px solid #6771ee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2a3c5a;
+            margin-top: 30px;
+        }
+        .intro {
+            background: #eef0ff;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #6771ee;
+            margin: 20px 0;
+        }
+        .contact-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .contact-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .contact-card h3 {
+            margin-top: 0;
+            color: #6771ee;
+        }
+        .faq-item {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #1c2b45;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #555;
+            padding-left: 10px;
+            border-left: 3px solid #6771ee;
+        }
+        .faq-answer ul, .faq-answer ol {
+            margin: 10px 0;
+        }
+        .faq-answer li {
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #6771ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        .response-time {
+            background: #eef0ff;
+            border: 1px solid #ccd1ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .response-time strong {
+            color: #1c2b45;
+            font-size: 1.2em;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        footer a {
+            color: #6771ee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Byheart Support</h1>
+
+    <div class="intro">
+        <p>
+            <strong>Welcome to Byheart Support!</strong> Byheart keeps the details you always
+            have to look up — passport number, IBAN, home address — and hands them to you
+            inside whatever app you are already using.
+        </p>
+    </div>
+
+    <div class="response-time">
+        <strong>We typically respond within 48 hours</strong>
+    </div>
+
+    <h2>Contact Us</h2>
+    <div class="contact-options">
+        <div class="contact-card">
+            <h3>Email Support</h3>
+            <p><a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a></p>
+            <p>For questions, bug reports, or feature requests.</p>
+        </div>
+    </div>
+
+    <h2>Setting up Back Tap</h2>
+    <div class="faq-answer">
+        <ol>
+            <li>Open Byheart and save at least one detail.</li>
+            <li>Open <strong>Settings &rsaquo; Accessibility &rsaquo; Touch &rsaquo; Back Tap</strong>.</li>
+            <li>Choose <strong>Triple Tap</strong>, scroll to the Shortcuts section, and pick
+                <strong>Byheart quick access</strong>.</li>
+        </ol>
+        <p>
+            To use it, open any app, triple-tap the back of your iPhone, and tap the detail
+            you want. It goes straight to your clipboard — press and hold the field and
+            choose Paste.
+        </p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="faq-question">Nothing happens when I triple-tap the back of my phone.</div>
+        <div class="faq-answer">
+            Back Tap has to be turned on for Byheart specifically — it is off by default.
+            Follow the three steps above. A few things worth knowing:
+            <ul>
+                <li>Back Tap does not work through every case, particularly thick or metal ones.</li>
+                <li>It is unavailable on iPhone 7 and earlier.</li>
+                <li>If Byheart does not appear in the Back Tap list, open the app once first
+                    so iOS can register its shortcut.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Why does Byheart copy the value instead of typing it into the field?</div>
+        <div class="faq-answer">
+            iOS does not let an app place text directly into another app's text field unless
+            it is acting as a keyboard or an AutoFill provider, and both of those cost far
+            more taps than Back Tap does. Copying keeps the whole interaction to two actions:
+            triple-tap, then tap the row.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Why can't I search in the picker?</div>
+        <div class="faq-answer">
+            The list is drawn by iOS itself, not by Byheart, so it has no search field. It is
+            ranked instead — favourites first, then what you use most often, then what you
+            used last — which puts the detail you want near the top. You can search inside
+            the Byheart app itself.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What does "protected" do?</div>
+        <div class="faq-answer">
+            A protected detail is hidden behind Face ID. Its value is masked everywhere in
+            the app, and revealing or copying it requires authentication. A protected copy is
+            also marked local-only, so it is not shared to your other Apple devices, and it
+            clears itself from the clipboard after 30, 60 or 120 seconds — your choice, in
+            <strong>Settings &rsaquo; Protected Clipboard</strong>.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Is Byheart a password manager?</div>
+        <div class="faq-answer">
+            No, and deliberately so. Byheart is for facts you look up — numbers, addresses,
+            reference codes. It does not store website logins, does not fill password fields,
+            and does not try to replace your password manager.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What does Byheart Pro include?</div>
+        <div class="faq-answer">
+            The free version keeps up to 5 details. Byheart Pro removes that limit. It is an
+            auto-renewing annual subscription, charged to your Apple Account, which renews
+            unless cancelled at least 24 hours before the period ends. Manage or cancel it in
+            <strong>Settings &rsaquo; your name &rsaquo; Subscriptions</strong>. If you
+            reinstall or change device, use <strong>Restore Purchases</strong> in the app.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Where is my data stored?</div>
+        <div class="faq-answer">
+            Only on your iPhone. Labels live in the app's own preferences and values live in
+            the iOS Keychain, tied to this device. Nothing is uploaded, synced, or shared.
+            See our <a href="privacy-policy.html">Privacy Policy</a>.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">What happens to my details if I delete the app?</div>
+        <div class="faq-answer">
+            They are removed with it. Because nothing is stored on a server, there is no copy
+            for us to restore — so if a detail matters, keep its original source too.
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a> | <a href="mailto:tom.weiss.t@gmail.com">Contact</a> | <a href="../index.html">All Apps</a>
+        </p>
+        <p style="margin-top: 10px;">© 2026 Code VIA Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>

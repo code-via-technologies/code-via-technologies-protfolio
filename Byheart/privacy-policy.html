@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Byheart</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        h1 {
+            color: #1c2b45;
+            border-bottom: 3px solid #6771ee;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2a3c5a;
+            margin-top: 30px;
+        }
+        .last-updated {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .highlight {
+            background: #eef0ff;
+            padding: 15px;
+            border-left: 4px solid #6771ee;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        a {
+            color: #6771ee;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            background: #f4f6f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        footer a {
+            color: #6771ee;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for Byheart</h1>
+    <p class="last-updated">Effective September 2026</p>
+
+    <div class="highlight">
+        <strong>Quick summary:</strong> Byheart contains no networking code. It has no
+        account system, no server, and no analytics. The details you save never leave your
+        device, because there is nothing in the app capable of sending them anywhere.
+    </div>
+
+    <h2>What we collect</h2>
+    <p>
+        <strong>Nothing.</strong> Byheart does not collect, transmit, or sell any personal
+        data. The app makes no network calls of any kind — no analytics SDK, no crash
+        reporting, and no advertising SDK.
+    </p>
+
+    <h2>The details you save</h2>
+    <p>
+        Byheart is built for the small set of things you repeatedly have to look up: a
+        passport number, an IBAN, a home address, a policy number. You decide what goes in.
+    </p>
+    <ul>
+        <li>Each detail's <strong>label and category</strong> are stored in the app's own
+            preferences on your device.</li>
+        <li>Each detail's <strong>value</strong> is stored in the iOS Keychain, with the
+            protection class <code>WhenUnlockedThisDeviceOnly</code> — it is tied to this
+            device and is not included in iCloud Keychain or in an encrypted backup that
+            could restore it elsewhere.</li>
+    </ul>
+    <p>
+        Nothing is synced to iCloud or any other service, and nothing is readable by other
+        apps.
+    </p>
+
+    <h2>Face ID and protected details</h2>
+    <p>
+        Any detail you mark as <strong>protected</strong> requires Face ID (or your device
+        passcode) before it can be revealed or copied. Byheart asks iOS to perform that
+        check and receives only a yes-or-no answer. Your biometric data stays in Apple's
+        Secure Enclave — Byheart never sees it, stores it, or transmits it.
+    </p>
+
+    <h2>Your clipboard</h2>
+    <p>
+        Byheart <strong>writes</strong> to your clipboard; it does not read it. When you
+        pick a detail, that value is placed on the clipboard so you can paste it.
+    </p>
+    <ul>
+        <li>For a <strong>protected</strong> detail, the copy is marked local-only, so iOS
+            does not hand it to your other Apple devices via Universal Clipboard, and it is
+            given an expiry so it clears itself automatically after the interval you choose
+            in Settings (30, 60 or 120 seconds).</li>
+        <li>For an ordinary detail, a normal clipboard copy is used, and it stays until
+            something replaces it — exactly as when you copy from any other app.</li>
+    </ul>
+    <p>
+        Byheart cannot monitor your clipboard in the background. iOS does not permit any app
+        to do that.
+    </p>
+
+    <h2>Back Tap and the detail picker</h2>
+    <p>
+        If you bind Byheart to Back Tap, triple-tapping the back of your iPhone asks iOS to
+        show its own list of your saved details. That list is drawn by the system, not by
+        Byheart, and the app you were using is never told that Byheart ran.
+    </p>
+
+    <h2>Purchases</h2>
+    <p>
+        Byheart Pro is an auto-renewing subscription handled entirely by Apple's StoreKit.
+        Byheart never sees or stores your payment information. Payment is charged to your
+        Apple Account, and the subscription renews automatically unless it is cancelled at
+        least 24 hours before the end of the current period. You can manage or cancel it at
+        any time in Settings &rsaquo; your name &rsaquo; Subscriptions.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>
+        Byheart does not knowingly collect any data from anyone, including children.
+    </p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>
+        If a future feature ever changes any of the above, this policy will be updated
+        before that feature ships, with the effective date revised.
+    </p>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>
+            <a href="support.html">Support</a> | <a href="mailto:tom.weiss.t@gmail.com">Contact</a> | <a href="../index.html">All Apps</a>
+        </p>
+        <p style="margin-top: 10px;">© 2026 Code VIA Technologies. All rights reserved.</p>
+    </footer>
+</body>
+</html>
