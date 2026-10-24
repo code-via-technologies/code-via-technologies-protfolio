@@ -129,7 +129,8 @@
     <p>
         You can turn analytics off at any time in the app's Settings. Opting out stops new events
         from being sent and deletes the events already collected from your install. Folio for
-        Android does not send usage analytics.
+        Android does not send these usage analytics; the only diagnostics from it are Google's
+        ML Kit reports when you use Enhance with AI (see "AI features").
     </p>
 
     <h2>Folio account</h2>
@@ -182,6 +183,8 @@
             service</strong>: delivering push notifications to your devices.</li>
         <li><strong>Railway</strong>: hosting our servers and database.</li>
         <li><strong>Apple and Google</strong>: confirming Folio Pro purchases made in their stores.</li>
+        <li><strong>Google ML Kit</strong> (Android): running Enhance with AI on your phone. It
+            sends Google diagnostics when you use the feature, as described under "AI features".</li>
         <li><strong>An email delivery provider</strong>: if we send invitation emails, only the
             recipient's address and the invitation go to it.</li>
     </ul>
@@ -210,8 +213,15 @@
         "Enhance with AI" runs entirely on your device: on iPhone, iPad and Mac it uses Apple
         Intelligence, and on Android it uses Google's on-device Gemini Nano model, which runs
         through Android's AICore system service. The text of your notes is never sent to us or
-        to any third party by this feature. It's only offered on devices that support these
-        on-device models.
+        to any third party by this feature. It only works on devices that support these
+        on-device models; elsewhere the app explains why it isn't available.
+    </p>
+    <p>
+        On Android, Folio Pro users can tap Enhance with AI. When they do, Google's ML Kit library,
+        which connects Folio to the on-device model, sends Google diagnostic information: device
+        and app information, performance metrics, feature usage and error codes, configured
+        languages, and identifiers. Google uses it for diagnostics and usage analytics. It never
+        includes the text of your notes, and nothing is sent unless you use the feature.
     </p>
 
     <h2>Photos and files</h2>
