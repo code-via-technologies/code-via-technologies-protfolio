@@ -67,7 +67,7 @@
 </head>
 <body>
     <h1>Privacy Policy for Folio</h1>
-    <p class="last-updated">Last updated: October 24, 2026</p>
+    <p class="last-updated">Last updated: October 29, 2026</p>
 
     <div class="highlight">
         <strong>Quick summary:</strong> Folio works without an account, and has no advertising.
@@ -75,8 +75,8 @@
         privately through your own Apple account. If you choose to sign in to a Folio account
         (to share notes or back them up), the notes in that account are stored on servers we
         operate so they can sync between your devices and the people you share with. Separately,
-        the iPhone, iPad and Mac app sends anonymous usage analytics, on by default and off with
-        one tap in Settings. Nothing is sold, and nothing is used for advertising.
+        the iPhone, iPad and Mac app sends usage analytics, tied to a random install ID rather
+        than your name, on by default and off with one tap in Settings. Nothing is sold, and nothing is used for advertising.
     </div>
 
     <h2>What we collect</h2>
@@ -91,14 +91,14 @@
         account library or share are stored with us.
     </p>
     <p>
-        Separately, Folio for iPhone, iPad and Mac sends anonymous usage analytics to a server we
+        Separately, Folio for iPhone, iPad and Mac sends usage analytics to a server we
         operate ourselves. This is a small, fixed set of events with no free-text fields. It
         never includes the content of your notes. Details are in the next section.
     </p>
 
     <h2>Usage analytics</h2>
     <p>
-        Folio for iPhone, iPad and Mac sends anonymous, on-by-default usage analytics to a server
+        Folio for iPhone, iPad and Mac sends on-by-default usage analytics to a server
         we operate. It is a short list of events, and nothing else:
     </p>
     <ul>
@@ -113,22 +113,32 @@
     </ul>
     <p>
         Alongside each event we record a random ID generated on your device when you first
-        install the app (not an Apple device identifier, not shared with any other app, and not
-        linked to your identity or to your Folio account), plus app version, iOS version, device
+        install the app (not an Apple device identifier, and not shared with any other app),
+        plus app version, iOS version, device
         model (e.g. "iPhone16,2"), language, your 2-letter country, and how many notes you
         currently have (a count only, never their titles or content). <strong>There are no
         free-text fields.</strong> Analytics never sees the text of your notes, your photos or
         attachments, or anything else you've typed.
     </p>
     <p>
+        The install ID doesn't carry your name or email, and we don't join analytics to your
+        Folio account. It is still personal data, though: a <strong>purchase</strong> event
+        carries the store's transaction ID, which also appears in your Folio Pro purchase record
+        if you have a Folio account, so the two could be matched. App Store privacy labels list
+        analytics as linked to you for that reason.
+    </p>
+    <p>
         We do not store IP addresses, even in logs; an IP is hashed with a key that rotates
         daily, used only to rate-limit abuse, and then discarded. Raw events are deleted after 90
-        days. Analytics never goes to an ad network, an analytics SDK, or any other third party.
+        days. A summary record per install (when it was first and last seen, app, iOS version and
+        device model, language, country, how many times the app was opened, and whether it made a
+        purchase) and the purchase records are kept until you ask us to delete them. Analytics never goes to an ad network, an analytics SDK, or any other third party.
         It goes to a server we operate ourselves and nowhere else. Nothing is sold or shared.
     </p>
     <p>
         You can turn analytics off at any time in the app's Settings. Opting out stops new events
-        from being sent and deletes the events already collected from your install. Folio for
+        from being sent. To delete what was already collected from your install, email us at the
+        address below. Folio for
         Android does not send these usage analytics; the only diagnostics from it are Google's
         ML Kit reports when you use Enhance with AI (see "AI features").
     </p>
@@ -144,10 +154,18 @@
             verified email address. If you use Sign in with Apple and hide your email, we only
             receive Apple's relay address.</li>
         <li><strong>Notes in your Folio account:</strong> the text, checklists, photos, files and
-            folders of notes you keep in your Folio account library or share, plus who last edited
-            each note and a recent history of changes so your devices can sync.</li>
+            folders of notes you keep in your Folio account library or share, including any
+            location you add to a note and any audio or video file you attach, plus who last
+            edited each note and a recent history of changes so your devices can sync.</li>
         <li><strong>Invitations you send:</strong> the email address you invite, an optional
-            message, and the invitation link. Invitations expire after 7 days.</li>
+            message, and the invitation link. We don't email the invitation; it appears in the
+            invited person's "Shared with me" when they sign in with that address. Invitations
+            expire after 7 days.</li>
+        <li><strong>Reports and blocks:</strong> if you report a shared note or a person, we
+            store who reported it, which note and person, the reason you picked, the details you
+            wrote (encrypted at rest) and the note's revision, so we can review it. If you block
+            someone, we store that you blocked them. We also record which version of the sharing
+            terms you accepted and when.</li>
         <li><strong>Folio Pro purchases:</strong> which store you bought from (App Store or Google
             Play), the product, and the store's transaction reference, so Pro works on every
             device you sign in to. To confirm a purchase we check it with Apple or Google.</li>
@@ -185,8 +203,6 @@
         <li><strong>Apple and Google</strong>: confirming Folio Pro purchases made in their stores.</li>
         <li><strong>Google ML Kit</strong> (Android): running Enhance with AI on your phone. It
             sends Google diagnostics when you use the feature, as described under "AI features".</li>
-        <li><strong>An email delivery provider</strong>: if we send invitation emails, only the
-            recipient's address and the invitation go to it.</li>
     </ul>
 
     <h2>Sharing notes</h2>
@@ -224,10 +240,25 @@
         includes the text of your notes, and nothing is sent unless you use the feature.
     </p>
 
-    <h2>Photos and files</h2>
+    <h2>Photos, files and locations</h2>
     <p>
         When you attach a photo or file, Folio receives only the item you explicitly pick. It
         has no access to the rest of your photo library or file system.
+    </p>
+    <p>
+        When you add your current location to a note, Folio asks for location access while you
+        use the app and reads your position once, at that moment. The location is saved in the
+        note like any other content: on your device, in your iCloud, and on our servers only if
+        the note is in your Folio account. Folio never tracks your location in the background.
+    </p>
+
+    <h2>Feedback</h2>
+    <p>
+        If you use Send Feedback in the iPhone, iPad or Mac app, we receive your message with the
+        app and system versions. It is stored on the same server as analytics and forwarded to our
+        private Slack workspace so we can read it. Slack stores it on our behalf. Feedback is kept
+        until you ask us to delete it; it isn't tied to your account, so tell us roughly what you
+        wrote and when.
     </p>
 
     <h2>Keeping and deleting your data</h2>
@@ -238,7 +269,7 @@
         <li><strong>Deleting your account:</strong> you can delete your Folio account in the
             app's account settings. This permanently removes the notes, folders and files you
             own, your invitations, purchase records and device tokens, and removes you from notes
-            others shared with you. Your name and email are erased; an anonymous "Deleted account"
+            others shared with you. Your name and email are erased; a "Deleted account"
             placeholder remains so the change history of notes shared with others stays
             consistent. Purchases themselves stay with Apple or Google.</li>
         <li><strong>Questions or requests:</strong> email us at the address below to access,
