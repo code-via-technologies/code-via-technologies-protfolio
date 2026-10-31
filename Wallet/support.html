@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Digital Wallet</title>
+    <title>Support - PassJar</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -67,195 +67,141 @@
             color: #007AFF;
             margin-bottom: 10px;
         }
-        .app-icon {
-            text-align: center;
-            font-size: 80px;
-            margin: 20px 0;
+        @media (max-width: 600px) {
+            .container { padding: 20px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="app-icon">🎁</div>
-        <h1>Digital Wallet Support</h1>
-        <p>Welcome to Digital Wallet support! We're here to help you manage your vouchers, refunds, and loyalty cards.</p>
+        <h1>PassJar Support</h1>
+        <p>PassJar turns your gift cards, loyalty cards, coupons and store credits into Apple Wallet passes, and keeps copies of personal documents in a private vault on your iPhone.</p>
 
         <div class="contact-box">
-            <p>Need help? Contact us:</p>
-            <a href="mailto:support@wallet-coupons.com">support@wallet-coupons.com</a>
+            <p>Need help? Email us:</p>
+            <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a>
         </div>
 
         <h2>Features</h2>
         <ul class="feature-list">
-            <li>Create digital vouchers and gift cards</li>
-            <li>Manage store refund credits</li>
-            <li>Track loyalty program cards</li>
-            <li>Generate Apple Wallet passes</li>
-            <li>Custom card templates</li>
-            <li>Barcode generation (QR, Code128, PDF417)</li>
-            <li>Local storage - your data stays on your device</li>
+            <li>Scan a barcode or QR code with the camera or from a photo</li>
+            <li>Create Apple Wallet passes with your own name, colours, logo and photo</li>
+            <li>QR, Code 128, PDF417 and Aztec barcodes</li>
+            <li>Documents vault for passport, ID and insurance copies, locked with Face ID</li>
+            <li>Home Screen and Lock Screen widgets (Pro)</li>
         </ul>
 
         <h2>Requirements</h2>
         <ul>
-            <li><strong>iOS Version:</strong> iOS 16.0 or later</li>
-            <li><strong>Device:</strong> iPhone or iPad</li>
-            <li><strong>Apple Wallet:</strong> Pre-installed on iOS devices</li>
+            <li><strong>iOS:</strong> iOS 26 or later, on iPhone or iPad</li>
+            <li><strong>Internet:</strong> needed to create a Wallet pass (it is signed by our server). Viewing saved passes and documents works offline.</li>
         </ul>
 
         <h2>Frequently Asked Questions</h2>
 
         <div class="faq-item">
-            <div class="faq-question">How do I create a new voucher?</div>
+            <div class="faq-question">How do I create a pass?</div>
             <div>
-                1. Tap the "+" button on the main screen<br>
-                2. Select a card template<br>
-                3. Enter card details (number, balance, expiration)<br>
-                4. Tap "Save to App" or "Add to Wallet"
+                Tap <strong>+</strong> on the My Passes screen, scan the card's barcode (or choose a photo, or enter
+                the details by hand), pick a design, then tap <strong>Add to Apple Wallet</strong>.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Can I edit a saved voucher?</div>
+            <div class="faq-question">What's free and what's in Pro?</div>
             <div>
-                Yes! Tap the pencil icon on any card to edit its details. You can update the balance, 
-                expiration date, or any other information.
+                Free: up to 3 saved passes, 1 pass added to Apple Wallet and 1 personal document.
+                PassJar Pro is a one-time purchase — no subscription — that removes those limits and unlocks
+                widgets. The price is shown in the app in your local currency.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">How do I delete a voucher?</div>
+            <div class="faq-question">How do I restore my Pro purchase?</div>
             <div>
-                Tap the pencil icon to edit the card, then scroll down and tap "Delete Voucher" at the bottom.
+                Open the Pro screen and tap <strong>Restore Purchases</strong>, signed in with the same Apple ID you
+                bought with.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Is my data secure?</div>
+            <div class="faq-question">How do I get a refund?</div>
             <div>
-                Yes! All your voucher data is stored locally on your device. We don't collect, transmit, 
-                or store any of your personal information on external servers. See our 
-                <a href="privacy-policy.html">Privacy Policy</a> for more details.
+                Purchases are handled by Apple. Request a refund at
+                <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">What's the difference between "Save to App" and "Add to Wallet"?</div>
+            <div class="faq-question">What data leaves my device?</div>
             <div>
-                <strong>Save to App:</strong> Stores the voucher in the Digital Wallet app only.<br>
-                <strong>Add to Wallet:</strong> Creates a pass and adds it to Apple Wallet for quick access.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Can I create custom cards?</div>
-            <div>
-                Yes! Select "Custom Voucher" from the card type list, then customize the name, 
-                organization, and color to create your own unique card.
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">Which Israeli retailers are supported?</div>
-            <div>
-                The app includes templates for popular Israeli retailers including:
                 <ul>
-                    <li>Tav Plus</li>
-                    <li>BuyMe</li>
-                    <li>Shufersal</li>
-                    <li>Mega</li>
-                    <li>Rami Levy</li>
-                    <li>And more!</li>
+                    <li><strong>When you create a Wallet pass</strong>, that pass's contents are sent to our signing
+                        server, signed and sent back. The server keeps nothing.</li>
+                    <li><strong>Usage analytics</strong> are sent only if you allow them when the app asks. Change this
+                        any time in Settings → Privacy.</li>
+                    <li><strong>Feedback</strong> you send from the app reaches us and is kept for 180 days.</li>
                 </ul>
+                Personal documents are never uploaded by PassJar. Full details are in our
+                <a href="privacy-policy.html">Privacy Policy</a>.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">Does this work offline?</div>
+            <div class="faq-question">Can I make a pass for any store's card?</div>
             <div>
-                Yes! The app works completely offline. All data is stored locally on your device.
-            </div>
-        </div>
-
-
-        <div class="faq-item">
-            <div class="faq-question">Can I export my vouchers?</div>
-            <div>
-                You can add individual vouchers to Apple Wallet. Currently, bulk export is not supported, 
-                but it's on our roadmap for future updates.
+                Only for cards, vouchers and memberships you actually hold. PassJar passes are created by you, not
+                issued by the store, and each one says so on its back. See our <a href="terms.html">Terms of Use</a>.
             </div>
         </div>
 
         <h2>Troubleshooting</h2>
 
         <div class="faq-item">
-            <div class="faq-question">The app crashes when I open it</div>
+            <div class="faq-question">"Couldn't create the pass"</div>
             <div>
-                1. Force close the app and reopen it<br>
-                2. Restart your device<br>
-                3. Ensure you have the latest iOS version<br>
-                4. If the problem persists, contact support
+                Check your internet connection and try again. Creating a pass needs to reach our signing server.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">"Cannot add to Wallet" error</div>
+            <div class="faq-question">"Cannot add to Wallet"</div>
             <div>
-                This usually occurs when:
-                <ul>
-                    <li>Testing on the iOS Simulator (use a real device)</li>
-                    <li>Wallet app is restricted in Screen Time settings</li>
-                    <li>Device storage is full</li>
-                </ul>
+                This usually happens when Wallet is restricted in Screen Time, or the device is out of storage.
             </div>
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">My saved vouchers disappeared</div>
+            <div class="faq-question">My saved passes disappeared</div>
             <div>
-                If you deleted and reinstalled the app, local data is lost. Unfortunately, we don't 
-                have cloud backup (to protect your privacy). Make sure to add important cards to 
-                Apple Wallet for backup.
+                Saved passes live on your device. If you deleted the app without a device backup, they can't be
+                recovered — but anything you added to Apple Wallet is still in Wallet.
             </div>
         </div>
-
-        <h2>Feature Requests</h2>
-        <p>
-            We love hearing from our users! If you have ideas for new features or improvements, 
-            please email us with the subject line "Feature Request".
-        </p>
 
         <h2>Contact Support</h2>
-        <p>If you need assistance, please email us with:</p>
-        <ul>
-            <li>Your device model (e.g., iPhone 14 Pro)</li>
-            <li>iOS version (e.g., iOS 18.1)</li>
-            <li>App version (found in Settings)</li>
-            <li>Detailed description of the issue</li>
-            <li>Screenshots if applicable</li>
-        </ul>
+        <p>When you email us, it helps to include your device model, iOS version, the PassJar version (Settings), and a description or screenshot of the problem.</p>
 
         <div class="contact-box">
             <p><strong>Email Support:</strong></p>
-            <a href="mailto:support@wallet-coupons.com">support@wallet-coupons.com</a>
+            <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a>
             <p style="margin-top: 15px; font-size: 14px; color: #666;">
-                We typically respond within 24-48 hours
+                We usually reply within a few days.
             </p>
         </div>
 
         <h2>Links</h2>
         <ul>
             <li><a href="privacy-policy.html">Privacy Policy</a></li>
-            <li><a href="https://apps.apple.com">Download on App Store</a> (coming soon)</li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="https://apps.apple.com/app/id6755545712">PassJar on the App Store</a></li>
         </ul>
 
         <hr style="margin: 40px 0; border: 0; border-top: 1px solid #ddd;">
-        
+
         <p style="text-align: center; color: #999; font-size: 14px;">
-            Digital Wallet<br>
-            Your digital wallet for vouchers, refunds, and loyalty cards
+            PassJar — passes for Apple Wallet
         </p>
     </div>
 </body>
 </html>
-
