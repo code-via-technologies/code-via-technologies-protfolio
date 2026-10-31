@@ -70,103 +70,158 @@
 </head>
 <body>
     <h1>Privacy Policy for Napling</h1>
-    <p class="last-updated">Last updated: August 10, 2026</p>
+    <!-- TODO(lawyer): controller identity/address, legal bases, rights & complaint, transfers mechanism, CCPA/Israel PPL — see nestling/docs/legal-risk-review-2026-10-31.md P3/P4 -->
+    <p class="last-updated">Last updated: October 31, 2026</p>
 
     <div class="highlight">
         <strong>Quick summary:</strong> Napling has no accounts and no advertising. Your baby's
-        data is stored on your device and, if you choose to share care with a partner or
-        caregiver, synced through your own private iCloud account. Separately, the app sends
-        anonymous usage analytics — on by default, off with one tap in Settings — to a server we
-        operate. See "Usage analytics" below for exactly what that is.
+        logs are stored on your device and, if you use iCloud, synced through your own private
+        iCloud account; you can also share them with a partner or caregiver you invite. Separately,
+        the app sends pseudonymous usage analytics — on by default, off with one tap in Settings —
+        to a server we operate, and if you choose to send feedback, the text you write goes to us
+        too. Both are explained below, including how long we keep them.
     </div>
 
     <h2>What we collect</h2>
     <p>
-        <strong>Your baby's data: nothing.</strong> Napling does not have accounts or
-        advertising. We cannot see your baby's feeding logs, sleep sessions, diaper changes,
-        growth measurements, milestones, or photos — that content never leaves your device except
-        through your own private iCloud sync.
+        <strong>Your baby's logs: we don't receive them.</strong> Napling lets you log feeds,
+        naps, and pumping, add one photo of your baby, and enter a birthdate (used for age-based
+        nap-window guidance). We cannot see those entries, the birthdate, or the photo — they stay
+        on your device and in your own private iCloud, and are never sent to our server.
     </p>
     <p>
-        Separately, Napling sends anonymous usage analytics to a server we operate ourselves.
-        This is a small, fixed set of events with no free-text fields — it never includes any of
-        the baby data described above. Details are in the next section.
+        Separately, Napling sends two kinds of data to a server we operate:
     </p>
+    <ul>
+        <li><strong>Usage analytics</strong> (on by default; you can turn them off in
+            Settings) — a short list of events described below. These are pseudonymous: they are
+            tied to a random ID, not your name, but they are not strictly anonymous.</li>
+        <li><strong>Feedback you send</strong> — only if you open the feedback form and tap send.</li>
+    </ul>
 
     <h2>Usage analytics</h2>
     <p>
-        Napling sends anonymous, on-by-default usage analytics to a server we operate. It is a
-        short list of events, and nothing else:
+        Napling sends pseudonymous, on-by-default usage analytics to a server we operate. The
+        events are:
     </p>
     <ul>
         <li><strong>app_open</strong> — with a flag for whether it was a cold start</li>
         <li><strong>first_launch</strong></li>
-        <li><strong>purchase</strong> — product id, transaction id, and whether it was a purchase
-            or a restore</li>
+        <li><strong>purchase</strong> — product id, App Store transaction id, and whether it was
+            a purchase or a restore</li>
         <li><strong>paywall_view</strong> — where the paywall was shown from</li>
-        <li><strong>feature_used</strong> — the name of a feature, from a fixed list we define</li>
+        <li><strong>feature_used</strong> — the name of a feature or action, such as
+            <em>feed_logged</em>, <em>pump_logged</em>, <em>nap_started</em>, or
+            <em>nap_ended</em></li>
         <li><strong>error</strong> — an error domain and a numeric code</li>
         <li><strong>opt_out</strong> — recorded when you turn analytics off</li>
     </ul>
     <p>
-        Alongside each event we record a random ID generated on your device when you first
-        install the app — not an Apple device identifier, not shared with any other app, and not
-        linked to your identity — plus app version, iOS version, device model (e.g.
-        "iPhone16,2"), language, and your 2-letter country. <strong>There are no free-text
-        fields.</strong> Analytics never sees your baby's feeding logs, sleep sessions, diaper
-        changes, growth measurements, milestones, photos, or anything else you've typed.
+        Alongside each event we record the time it happened and a random ID generated on your
+        device when you first install the app — not an Apple device identifier and not shared
+        with any other app — plus app version, iOS version, device model (e.g. "iPhone16,2"),
+        language, and your 2-letter country.
     </p>
     <p>
-        We do not store IP addresses, even in logs; an IP is hashed with a key that rotates
-        daily, used only to rate-limit abuse, and then discarded. Raw events are deleted after 90
-        days. Analytics never goes to an ad network, an analytics SDK, or any other third party —
-        it goes to a server we operate ourselves and nowhere else. Nothing is sold or shared.
+        <strong>Care actions are included, in a limited way.</strong> Events such as
+        <em>feed_logged</em>, <em>pump_logged</em>, <em>nap_started</em>, and
+        <em>nap_ended</em> are sent with a timestamp, so the <em>timing</em> of when you log
+        these actions is sent to us. They carry no amounts, notes, names, birthdates, or photos —
+        and never the content of your baby's logs — but over time the timing of logging
+        actions can reflect a daily routine.
+    </p>
+    <p>
+        Because purchase events include the App Store transaction ID, the analytics data is
+        pseudonymous rather than anonymous: that ID could in principle be tied to an App Store
+        purchase. We do not use it to identify you.
+    </p>
+    <p>
+        We do not store IP addresses in our application; an IP is hashed with a key that rotates
+        daily, used only to rate-limit abuse, and then discarded. Analytics never goes to an ad
+        network or an analytics SDK. Nothing is sold.
     </p>
     <p>
         You can turn analytics off at any time in the app's Settings. Opting out stops new events
-        from being sent and deletes the events already collected from your install.
+        from being sent and asks our server to delete what it holds for your install. Using "Delete My Analytics Data" in Settings deletes the events, install
+        record, and purchase records we hold for your install from our server. It does not remove
+        copies of feedback already posted to Slack (see below).
+    </p>
+
+    <h2>Feedback you send</h2>
+    <p>
+        Napling has an optional feedback form. If you send feedback, we receive the message text
+        you wrote, the app version, and the iOS version. Please don't include your baby's name or
+        health details. Feedback is sent to our server, stored for 180 days, and a copy is posted
+        to a private channel in Slack, which we use to read it. It is not linked to the random
+        analytics ID. We can't reply from within the app. To have your feedback deleted, email us
+        at the address below.
+    </p>
+
+    <h2>How long we keep data</h2>
+    <ul>
+        <li><strong>Raw analytics events:</strong> 90 days</li>
+        <li><strong>Per-install summary</strong> (device model, locale, country, number of app
+            opens, whether the app was purchased): 13 months</li>
+        <li><strong>Purchase records</strong>, including the App Store transaction ID: 25 months</li>
+        <li><strong>Feedback:</strong> 180 days on our server. Copies posted to Slack are kept
+            under our Slack workspace's settings and are not removed when you delete your
+            analytics data.</li>
+    </ul>
+
+    <h2>Service providers</h2>
+    <ul>
+        <li><strong>Railway</strong> hosts the server that receives analytics and feedback.</li>
+        <li><strong>Slack</strong> receives a copy of each feedback message so we can read it.</li>
+        <li><strong>Apple</strong> provides iCloud/CloudKit (sync and sharing) and the App Store
+            and StoreKit (purchases). Apple's handling of this data is described in
+            <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's own privacy policy</a>.</li>
+    </ul>
+    <p>
+        Data sent to our server and to Slack may be processed in the United States.
     </p>
 
     <h2>Where your data lives</h2>
     <ul>
-        <li><strong>On your device.</strong> Feeding, sleep, diaper, growth, and milestone
-            entries are stored locally on your iPhone.</li>
+        <li><strong>On your device.</strong> Feed, nap, and pumping entries, your baby's
+            birthdate, and the baby photo are stored locally on your iPhone.</li>
         <li><strong>In your iCloud.</strong> If you are signed in to iCloud, Napling syncs
             your data through Apple's CloudKit to your <em>private</em> iCloud database —
             storage that belongs to your Apple account, protected by Apple, and inaccessible
-            to us. Apple's handling of iCloud data is described in
-            <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's own privacy policy</a>.</li>
+            to us.</li>
     </ul>
 
     <h2>Sharing care with a partner or caregiver</h2>
     <p>
-        When you invite a partner, grandparent, or other caregiver to co-track your baby,
-        Apple's CloudKit sharing sends an invitation to the people you choose. Only invited
-        participants can see the shared data. Sharing never passes through any server of
-        ours, and you can stop sharing at any time from the app's share settings.
+        Sharing is free. When you invite a partner, grandparent, or other caregiver to co-track
+        your baby, Apple's CloudKit sharing sends an invitation to the people you choose. Only
+        invited participants can see the shared data, and sharing never passes through any server
+        of ours.
     </p>
+    <ul>
+        <li>Participants can see each other's Apple ID name or email address through Apple's
+            share interface.</li>
+        <li>Participants get read-write access to the shared baby's records: they can add, edit,
+            and delete entries.</li>
+        <li>You can stop sharing, or remove a participant, at any time from the app's share
+            settings. This stops future syncing, but it may not remove data already on that
+            person's device.</li>
+    </ul>
 
     <h2>Photos</h2>
     <p>
-        When you attach a photo to a milestone, Napling receives only the photo you
-        explicitly pick — it has no access to the rest of your photo library. Photos are
-        stored and synced the same way as the rest of your data: locally, and through your
-        own private iCloud if enabled.
-    </p>
-
-    <h2>Growth and health information</h2>
-    <p>
-        Weight, height, and head circumference measurements you enter are treated the same
-        as all other Napling data — stored locally and, if enabled, synced privately through
-        your own iCloud account. We do not access, analyze, or share this information.
+        When you add a photo of your baby, Napling receives only the photo you explicitly pick —
+        it has no access to the rest of your photo library. The photo is stored and synced the
+        same way as the rest of your data: locally, and through your own private iCloud if
+        enabled. It is never sent to our server.
     </p>
 
     <h2>Children's Privacy</h2>
     <p>
         Napling is intended for use by parents and caregivers to track information about
         their children, not for use by children themselves. We do not knowingly collect any
-        data directly from children, and Napling has no advertising, messaging, or social
-        features of any kind.
+        data directly from children. Napling has no advertising and no social network or
+        messaging features; the only person-to-person feature is the invite-only caregiver
+        sharing described above.
     </p>
 
     <h2>Changes to This Privacy Policy</h2>
