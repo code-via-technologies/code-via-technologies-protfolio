@@ -121,7 +121,8 @@
             weekly Battle goal, and your notification choices</li>
         <li>the <strong>push and Live Activity tokens</strong> Apple gives your device, so we can
             notify you about your Battles and keep a Battle's Live Activity up to date</li>
-        <li><strong>reports and blocks</strong> you make, and reports made about you</li>
+        <li><strong>reports and blocks</strong> you make, and reports made about you. If we ban a
+            Battle identity, we keep the date and a short reason with it.</li>
         <li>if you buy Random Battles Pro, the <strong>App Store transaction IDs</strong> linked to
             your Battle identity. Apple processes the payment; we never see your payment details.</li>
         <li>one-time <strong>transfer codes</strong>, stored only in hashed form. They expire after 15 minutes.</li>
@@ -132,7 +133,8 @@
         <strong>Who sees it:</strong> in a friend Battle, the person you invited sees your name,
         photo and score. In a <strong>Random Battle</strong>, a stranger matched with you sees your
         name, photo and score, and may see your name in a notification inviting them to a Battle.
-        Anyone who has your photo's web address can open your photo.
+        Your photo is shown through a private link that stops working within two days, or as soon
+        as you change or remove the photo.
         Sometimes the person matched with you is the Stride developer, playing as a normal player.
     </p>
 
@@ -150,8 +152,8 @@
     <p>
         We don't store IP addresses. An IP address is hashed with a key that changes every day,
         used only to limit abuse, and then thrown away. Raw events are deleted after 90 days.
-        The install record keeps your device model, country and first and last seen dates for as
-        long as the analytics service runs.
+        The install record keeps your device model, country and first and last seen dates, and is
+        deleted 13 months after your install was last seen.
     </p>
     <p>
         <strong>Your choice:</strong> from version 1.3.5, in the EU, EEA, UK and Switzerland, Stride asks before
@@ -167,6 +169,7 @@
         If you send a message with the in-app Feedback form, your text, app version and iOS
         version go to our telemetry server. They are stored there and forwarded to our private
         Slack workspace so that we can read and answer them. Nothing is sent unless you press Send.
+        Feedback stored on our server is deleted after 180 days.
     </p>
 
     <h2>Slack</h2>
@@ -209,7 +212,8 @@
     <ul>
         <li>Battle profile, Battle history, reports and purchase links: until you ask us to
             delete them. We don't delete old Battles automatically yet.</li>
-        <li>Raw analytics events: 90 days. Install records and feedback: see above.</li>
+        <li>Raw analytics events: 90 days. Install records: 13 months after your install was last
+            seen. Feedback messages: 180 days.</li>
         <li>Slack messages: as long as our Slack workspace keeps them.</li>
         <li>Database backups can contain deleted data until they expire.</li>
     </ul>
