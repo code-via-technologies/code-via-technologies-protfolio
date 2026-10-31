@@ -150,19 +150,19 @@
     <div class="contact-options">
         <div class="contact-card">
             <h3>📧 Email Support</h3>
-            <p><a href="mailto:support@clarifyexpenses.com">support@clarifyexpenses.com</a></p>
+            <p><a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a></p>
             <p>For general questions, account issues, or detailed support requests.</p>
         </div>
 
         <div class="contact-card">
             <h3>🐛 Bug Reports</h3>
-            <p><a href="https://github.com/clarify-mobile/support/issues" target="_blank">GitHub Issues</a></p>
+            <p><a href="mailto:tom.weiss.t@gmail.com?subject=Clarify%20Expenses%20bug%20report">Email a bug report</a></p>
             <p>Report bugs, crashes, or unexpected behavior. Please include your iOS version and device model.</p>
         </div>
 
         <div class="contact-card">
             <h3>💡 Feature Requests</h3>
-            <p><a href="https://github.com/clarify-mobile/support/issues" target="_blank">GitHub Issues</a></p>
+            <p><a href="mailto:tom.weiss.t@gmail.com?subject=Clarify%20Expenses%20feature%20request">Email a suggestion</a></p>
             <p>Suggest new features or improvements. We love hearing from users!</p>
         </div>
     </div>
@@ -191,24 +191,22 @@
                 <li>Check your internet connection</li>
                 <li>Make sure you're signed in (Settings → Account)</li>
                 <li>Force quit and restart the app</li>
-                <li>Go to Settings → Sync and tap "Sync Now"</li>
+                <li>Go to Settings → General and tap "Sync Now"</li>
             </ul>
-            <p>If the problem persists, please contact us at <a href="mailto:support@clarifyexpenses.com">support@clarifyexpenses.com</a>.</p>
+            <p>If the problem persists, please contact us at <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a>.</p>
         </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Q: How do I change the app language?</div>
         <div class="faq-answer">
-            <p><strong>A:</strong> Clarify Expenses automatically uses your device's language setting.</p>
-            <p>To change the language:</p>
+            <p><strong>A:</strong> You can change the language inside the app:</p>
             <ol>
-                <li>Go to your device Settings app</li>
-                <li>Scroll down to Clarify Expenses</li>
+                <li>Open Clarify Expenses and go to Settings → General</li>
                 <li>Tap "Language"</li>
                 <li>Select your preferred language</li>
             </ol>
-            <p>The app will restart with your selected language.</p>
+            <p>Restart the app for the change to take full effect.</p>
         </div>
     </div>
 
@@ -240,13 +238,14 @@
     <div class="faq-item">
         <div class="faq-question">Q: Is my financial data secure?</div>
         <div class="faq-answer">
-            <p><strong>A:</strong> Absolutely! Security is our top priority:</p>
+            <p><strong>A:</strong> We take care with your data. Here is how it is handled:</p>
             <ul>
-                <li>All data is stored locally on your device by default</li>
-                <li>Optional cloud sync uses end-to-end encryption</li>
-                <li>We use HTTPS/TLS for all network communications</li>
-                <li>We never sell or share your data with third parties</li>
-                <li>You can delete your data at any time</li>
+                <li>An Apple or Google account is required to use the app</li>
+                <li>Your transactions are saved on your device and synced to our server (hosted on Railway)</li>
+                <li>Bank statement files you import are processed on our server</li>
+                <li>Data is encrypted in transit using HTTPS/TLS</li>
+                <li>We never sell your data; we share it only with the service providers named in our Privacy Policy</li>
+                <li>You can delete your data or your account at any time in the app</li>
             </ul>
             <p>Read our full <a href="privacy-policy.html">Privacy Policy</a> for more details.</p>
         </div>
@@ -257,10 +256,9 @@
         <div class="faq-answer">
             <p><strong>A:</strong> Yes! You can export your data as a CSV file:</p>
             <ol>
-                <li>Go to Settings → Data Management</li>
-                <li>Tap "Export Transactions"</li>
-                <li>Choose your date range</li>
-                <li>Select where to save the file</li>
+                <li>Go to Settings</li>
+                <li>Tap "Export Data"</li>
+                <li>Choose where to save or share the file</li>
             </ol>
             <p>This is useful for tax preparation, backup, or migrating to another app.</p>
         </div>
@@ -271,7 +269,7 @@
         <div class="faq-answer">
             <p><strong>A:</strong> To delete your account and all associated data:</p>
             <ol>
-                <li>Go to Settings → Account</li>
+                <li>Go to Settings</li>
                 <li>Scroll to the bottom</li>
                 <li>Tap "Delete Account"</li>
                 <li>Confirm your choice</li>
@@ -299,13 +297,13 @@
     <div class="faq-item">
         <div class="faq-question">Q: Does the app work offline?</div>
         <div class="faq-answer">
-            <p><strong>A:</strong> Yes! Clarify Expenses works completely offline. All core features are available without an internet connection:</p>
+            <p><strong>A:</strong> Partly. Once you have signed in, you can keep using these features without an internet connection:</p>
             <ul>
                 <li>Add, edit, and delete transactions</li>
                 <li>View summaries and reports</li>
                 <li>Browse transaction history</li>
             </ul>
-            <p>You only need internet for sync across devices and signing in/out.</p>
+            <p>You need internet to sign in, to import bank files (they are processed on our server), and to sync across devices.</p>
         </div>
     </div>
 
@@ -334,7 +332,7 @@
                 <li>Has dates in a recognizable format (MM/DD/YYYY, DD/MM/YYYY, or YYYY-MM-DD)</li>
                 <li>Doesn't have special formatting or merged cells</li>
             </ul>
-            <p>If you're still having trouble, email us your CSV file (with sensitive data removed) and we'll help diagnose the issue.</p>
+            <p>If you're still having trouble, email us a description of the problem, including your bank's name and the error you see. Please do not attach your bank statements or other files containing financial data.</p>
         </div>
     </div>
 
@@ -358,15 +356,14 @@
             <li><strong>Review categorization:</strong> Check auto-categorized transactions and correct any mistakes to improve accuracy</li>
             <li><strong>Use the summary view:</strong> Weekly reviews help you spot spending patterns early</li>
             <li><strong>Add notes:</strong> Add details to transactions for better context when reviewing later</li>
-            <li><strong>Enable sync:</strong> Keep your data safe across devices with cloud sync</li>
+            <li><strong>Sync:</strong> Your data syncs automatically across your devices when you are signed in</li>
         </ul>
     </div>
 
     <h2>📚 Additional Resources</h2>
     <ul>
         <li><a href="privacy-policy.html">Privacy Policy</a> - How we protect your data</li>
-        <li><a href="https://github.com/clarify-mobile/support" target="_blank">GitHub Repository</a> - View open issues and contribute</li>
-        <li><a href="mailto:support@clarifyexpenses.com">Email Support</a> - Direct support for your questions</li>
+        <li><a href="mailto:tom.weiss.t@gmail.com">Email Support</a> - Direct support for your questions</li>
     </ul>
 
     <h2>💬 Send Us Feedback</h2>
@@ -375,15 +372,15 @@
         bug report, or just a suggestion, we want to hear from you.
     </p>
     <ul>
-        <li><strong>Feature Requests:</strong> <a href="https://github.com/clarify-mobile/support/issues" target="_blank">Submit on GitHub</a></li>
-        <li><strong>General Feedback:</strong> <a href="mailto:support@clarifyexpenses.com">Email us</a></li>
+        <li><strong>Feature Requests:</strong> <a href="mailto:tom.weiss.t@gmail.com?subject=Clarify%20Expenses%20feature%20request">Email us</a></li>
+        <li><strong>General Feedback:</strong> <a href="mailto:tom.weiss.t@gmail.com">Email us</a></li>
         <li><strong>Rate the App:</strong> Leave a review on the App Store</li>
     </ul>
 
     <div class="response-time">
         <p>
             <strong>Need immediate help?</strong><br>
-            Email us at <a href="mailto:support@clarifyexpenses.com">support@clarifyexpenses.com</a><br>
+            Email us at <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a><br>
             We typically respond within 48 hours
         </p>
     </div>
@@ -391,9 +388,9 @@
     <footer>
         <p>
             <a href="privacy-policy.html">Privacy Policy</a> | 
-            <a href="mailto:support@clarifyexpenses.com">Contact Support</a>
+            <a href="mailto:tom.weiss.t@gmail.com">Contact Support</a>
         </p>
-        <p>© 2025 Clarify Expenses. All rights reserved.</p>
+        <p>© 2026 Code VIA Technologies. All rights reserved.</p>
     </footer>
 </body>
 </html>
