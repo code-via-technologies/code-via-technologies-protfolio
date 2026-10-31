@@ -137,11 +137,10 @@
         Stride reads your step count from Apple Health and shows it where you actually look —
         the Dynamic Island while you're out walking, and a Lock Screen tile with your daily
         goal ring the rest of the day. Set a daily step goal from 1,000 to 50,000, and Stride
-        tracks distance and duration during active walks. Stride has no traditional accounts
-        (no email or password), and solo tracking with Stride Companion runs entirely on
-        your device. Step Battles is the one feature that talks to a server, so you can race
-        a friend — see "Is my step and location data private?" below and the full
-        <a href="privacy-policy.html">Privacy Policy</a> for exactly what that involves.
+        tracks distance and duration during active walks. Solo tracking and Stride Companion
+        run entirely on your device. Step Battles, with a friend or with a random walker,
+        use a server we operate. So do usage analytics and the Feedback form. The
+        <a href="privacy-policy.html">Privacy Policy</a> explains exactly what each one sends.
     </p>
 
     <h2>Apple Health Permission</h2>
@@ -194,39 +193,62 @@
     <div class="faq-item">
         <div class="faq-question">Q: Is my step and location data private?</div>
         <div class="faq-answer">
-            <p><strong>A:</strong> Your step data is read from Apple Health and stays on your
-            device; location used during a walk is processed on-device to power the live
-            Dynamic Island and Lock Screen updates and is never transmitted anywhere. Raw
-            HealthKit data, body mass, active energy, calories, your route, and your precise
-            location never leave your iPhone. The one exception is Step Battles: if you join
-            one, your display name, Battle score, Battle timestamps, a push token, and an
-            anonymous per-install identifier are sent to a server we operate so your
-            opponent can see the race. Stride also sends anonymous usage analytics by
-            default (you can turn this off, and delete what's already been collected, in
-            Settings), and sends whatever you type if you use the in-app Feedback form. See
-            the full <a href="privacy-policy.html">Privacy Policy</a> for exactly what each
-            of those involves.</p>
+            <p><strong>A:</strong> Your Apple Health data, routes and location stay on your
+            iPhone and are never sent anywhere. If you play Step Battles, our server stores your
+            Battle display name, optional photo, Battle step scores and an anonymous Battle
+            identity. In <strong>Random Battles</strong>, the stranger you're matched with sees
+            your name, photo and score. Stride also sends usage analytics. In the EU, EEA, UK and
+            Switzerland, it asks you first. You can turn analytics off in Settings → Privacy. If you
+            use the Feedback form, your message comes to us. Some operational alerts go to our
+            private Slack workspace. The full <a href="privacy-policy.html">Privacy Policy</a> lists
+            everything.</p>
         </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Q: Does Stride need an internet connection?</div>
         <div class="faq-answer">
-            <p><strong>A:</strong> Not for the core app — Apple Health step tracking, Stride
-            Companion, and your walk/route history all work fully offline. A connection is
-            only needed for Step Battles (to sync scores with your opponent and receive
-            Battle notifications), for anonymous usage analytics (on by default, off in
-            Settings), and if you send us a message through the in-app Feedback form.</p>
+            <p><strong>A:</strong> Not for the core app. Apple Health step tracking, Stride
+            Companion, and your walk and route history all work fully offline. You need a
+            connection for Step Battles, for usage analytics if they're on, and to send
+            feedback.</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: Who will I play in a Random Battle?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> Another Stride walker who is searching at the same time, or
+            who has turned on Battle invitations. Invitations are off until you turn them on in
+            Battle settings. If no one else is available, your opponent may sometimes be the
+            Stride developer, playing as a normal player. Random Battles are for people aged 13
+            and over (16 and over in the EU and UK).</p>
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">Q: How do I report or block another player?</div>
+        <div class="faq-answer">
+            <p><strong>A:</strong> During a Random Battle, tap ••• → <strong>Report or block</strong>.
+            After a Battle, use <strong>Report or block</strong> on its result screen, which you
+            can also open from Your progress. Choose a reason, such as an inappropriate name or
+            photo, and leave "Block future matches" on if you never want to play them again.
+            We review every report within 24 hours. We can remove names and photos and ban
+            players who break the <a href="terms.html">Terms of Use</a>. You can also email
+            <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a>, for example to
+            report illegal content or to appeal a decision we made about your account.</p>
         </div>
     </div>
 
     <div class="faq-item">
         <div class="faq-question">Q: Can I delete my Step Battle data?</div>
         <div class="faq-answer">
-            <p><strong>A:</strong> Battle records don't delete themselves automatically — we
-            don't currently run an automated retention/deletion process. Email us at
-            <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a> and we'll delete
-            your Battle history and anonymous identity by hand.</p>
+            <p><strong>A:</strong> Yes. In Stride 1.3.4 or later, open Settings, tap your
+            Battle profile, then tap <strong>Delete Battle Profile</strong>. This deletes your
+            name, photo, scores, settings and tokens from our server. Finish or forfeit any
+            running Battle first. On older versions, email
+            <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a> and we'll delete it
+            for you. Deleting the app alone does not delete your Battle profile.</p>
         </div>
     </div>
 
@@ -256,7 +278,7 @@
     </p>
     <ul>
         <li><strong>In the app:</strong> Settings → Send Feedback. Your message and app/iOS
-            version are sent to a server we operate and relayed to us privately — see the
+            version are sent to a server we operate and forwarded to our private Slack — see the
             <a href="privacy-policy.html">Privacy Policy</a> for details.</li>
         <li><strong>Email:</strong> <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a></li>
         <li><strong>Rate the App:</strong> Leave a review on the App Store</li>
@@ -264,7 +286,7 @@
 
     <footer>
         <p>
-            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a> | <a href="mailto:tom.weiss.t@gmail.com">Contact Support</a> | <a href="../index.html">All Apps</a>
+            <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="mailto:tom.weiss.t@gmail.com">Contact Support</a> | <a href="../index.html">All Apps</a>
         </p>
         <p style="margin-top: 10px;">© 2026 Code VIA Technologies. All rights reserved.</p>
     </footer>

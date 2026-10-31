@@ -66,194 +66,196 @@
     </style>
 </head>
 <body>
+
     <h1>Privacy Policy for Stride</h1>
-    <p class="last-updated">Last updated: August 30, 2026</p>
+    <p class="last-updated">Last updated: October 31, 2026</p>
 
     <div class="highlight">
-        <strong>Quick summary:</strong> Stride has no traditional accounts. Your step, health,
-        and location data stay on your iPhone, and Health access is read-only — Stride never
-        writes to your Apple Health data. If you join a Step Battle, your display name,
-        Battle step score (never your daily HealthKit total), Battle timestamps, a push
-        token, and an anonymous per-install identity are sent to a server we operate, so
-        your opponent can see the race and you can get notified about it — see "Step
-        Battles" below. Stride Companion needs none of that: it runs entirely on your
-        device. Separately, the app sends anonymous usage analytics — on by default, off
-        with one tap in Settings — to a server we operate, and if you use the in-app
-        Feedback form, that message goes to a third, separate server we operate. See "Usage
-        analytics" and "Feedback" below.
+        <strong>Quick summary:</strong> Your Apple Health data, walks, routes and goals stay on
+        your iPhone, and Health access is read-only. If you play Step Battles, a server we run
+        holds a Battle profile for you: a display name, an optional photo, Battle scores and an
+        anonymous ID. In <strong>Random Battles</strong>, people you don't know see your name,
+        photo and score. Stride also sends usage analytics, which are on by default. If you
+        send feedback, it goes to us. Some of this is forwarded to a private Slack workspace
+        that we use for alerts. We don't sell your data, show ads or use ad networks.
     </div>
 
-    <h2>What we collect</h2>
+    <h2>Who we are</h2>
     <p>
-        <strong>Your step and health data: nothing.</strong> Stride does not have traditional
-        accounts (email, password) or advertising. We cannot see your step counts, walks,
-        goals, route, or location — that data never leaves your device.
+        Stride is made by Code VIA Technologies (“we”, “us”), which is the controller of the
+        personal data described here.
+        Contact details are at the end of this policy.
     </p>
+
+    <h2>Data that stays on your device</h2>
+    <ul>
+        <li><strong>Apple Health:</strong> Stride reads your steps, active energy and body
+            weight. It uses them to show your progress and to estimate distance and calories.
+            Access is read-only: Stride never writes to Apple Health. These values are never
+            sent to us or anyone else.</li>
+        <li><strong>Motion:</strong> step counts from your iPhone's motion sensor. These are
+            used on the device, and to calculate a Battle score (see below).</li>
+        <li><strong>Location:</strong> used while a walk or workout is running, so tracking
+            continues in the background. If route tracking is on, the GPS route is saved in
+            your History on this iPhone. It stays there until you delete that walk or the app.
+            We never send your location or routes off your device.</li>
+        <li><strong>Walk history, goals, Companion pace</strong> and the Lock Screen and Dynamic
+            Island displays. None of these is synced to iCloud or any other service.</li>
+    </ul>
+
+    <h2>Step Battles (friend and Random)</h2>
     <p>
-        <strong>The one exception is Step Battles</strong>, an opt-in feature: when you create
-        or accept a Battle, Stride sends your chosen display name, your Battle step count
-        (steps since the Battle started, never your daily HealthKit total), Battle
-        timestamps, your device's push token, and an anonymous per-install identity to a
-        server we operate, so the app can show both sides of the race and notify you about
-        it. See "Step Battles" below for the full detail. Stride Companion, the solo
-        alternative, needs no server at all — see "Stride Companion" below.
+        Battles are optional. The first time you play, the app creates an anonymous Battle
+        identity: a user ID, a device ID and a device secret. They are stored in your iPhone's
+        Keychain, so they <strong>survive deleting and reinstalling the app</strong>. You can move
+        them to a new phone with a one-time transfer code. No email, password or Apple ID is
+        involved. Our Battle server, <strong>stride-battles-api</strong>, stores:
     </p>
+    <ul>
+        <li>your <strong>display name</strong> and, if you add one, your <strong>profile photo</strong></li>
+        <li>your <strong>Battle step scores</strong>, meaning steps counted since a Battle started,
+            plus each Battle's start, end and sync times and its result. Your daily total and
+            raw Health data are never sent.</li>
+        <li>the <strong>time zone</strong> of a Battle's creator, so Battles end at the right local time</li>
+        <li>your Random Battle <strong>settings</strong>: whether you accept invitations, your
+            weekly Battle goal, and your notification choices</li>
+        <li>the <strong>push and Live Activity tokens</strong> Apple gives your device, so we can
+            notify you about your Battles and keep a Battle's Live Activity up to date</li>
+        <li><strong>reports and blocks</strong> you make, and reports made about you</li>
+        <li>if you buy Random Battles Pro, the <strong>App Store transaction IDs</strong> linked to
+            your Battle identity. Apple processes the payment; we never see your payment details.</li>
+        <li>one-time <strong>transfer codes</strong>, stored only in hashed form. They expire after 15 minutes.</li>
+        <li>a log of Random Battle <strong>events</strong>, such as searches, invitations, matches
+            and results, used to run matchmaking and find problems</li>
+    </ul>
     <p>
-        Separately, Stride sends anonymous usage analytics to a server we operate ourselves.
-        This is a small, fixed set of events with no free-text fields — it never includes
-        any of the health or location data described below. Details are in the "Usage
-        analytics" section.
-    </p>
-    <p>
-        If you use the in-app Feedback form, the message you type is sent to a third server
-        we operate, separate from both the Battle server and the analytics server. Details
-        are in the "Feedback" section.
+        <strong>Who sees it:</strong> in a friend Battle, the person you invited sees your name,
+        photo and score. In a <strong>Random Battle</strong>, a stranger matched with you sees your
+        name, photo and score, and may see your name in a notification inviting them to a Battle.
+        Anyone who has your photo's web address can open your photo.
+        Sometimes the person matched with you is the Stride developer, playing as a normal player.
     </p>
 
     <h2>Usage analytics</h2>
     <p>
-        Stride sends anonymous, on-by-default usage analytics to a server we operate. It is
-        a short list of events, and nothing else:
-    </p>
-    <ul>
-        <li><strong>app_open</strong> — with a flag for whether it was a cold start</li>
-        <li><strong>first_launch</strong></li>
-        <li><strong>feature_used</strong> — the name of a feature, from a fixed list we
-            define (e.g. starting a walk or workout)</li>
-        <li><strong>error</strong> — an error domain and a numeric code</li>
-        <li><strong>opt_out</strong> — recorded when you turn analytics off</li>
-    </ul>
-    <p>
-        Alongside each event we record a random ID generated on your device when you first
-        install the app — not an Apple device identifier, not shared with any other app,
-        and not linked to your identity — plus app version, iOS version, device model (e.g.
-        "iPhone16,2"), language, and your 2-letter country. <strong>There are no free-text
-        fields.</strong> Analytics never sees your step counts, walks, goals, or location.
+        Stride sends usage analytics to a telemetry server we operate, and it is
+        <strong>on by default</strong>. The events are a fixed list: app opened, first launch,
+        a feature used (a name from a list we define, such as starting a walk or viewing the
+        Random Battles upgrade screen), and errors (an error domain and a numeric code). Each event
+        includes a random install ID created on your device, which is not an Apple device
+        identifier, plus your app version, iOS version, device model, language and two-letter
+        country. There are no free-text fields, and analytics never includes Health data,
+        location, Battle scores or your display name.
     </p>
     <p>
-        We do not store IP addresses, even in logs; an IP is hashed with a key that rotates
-        daily, used only to rate-limit abuse, and then discarded. Raw events are deleted
-        after 90 days. Analytics never goes to an ad network, an analytics SDK, or any other
-        third party — it goes to a server we operate ourselves and nowhere else. Nothing is
-        sold or shared.
+        We don't store IP addresses. An IP address is hashed with a key that changes every day,
+        used only to limit abuse, and then thrown away. Raw events are deleted after 90 days.
+        The install record keeps your device model, country and first and last seen dates for as
+        long as the analytics service runs.
     </p>
     <p>
-        You can turn analytics off at any time in the app's Settings. Opting out stops new
-        events from being sent and deletes the events already collected from your install.
-    </p>
-
-    <h2>Step Battles</h2>
-    <p>
-        A Step Battle is a private, opt-in walking competition against one other person.
-        Creating or accepting one requires no email, password, or traditional account — just
-        a display name of your choosing, the only setup Battles requires. The app then
-        generates an anonymous identity for your install automatically.
-    </p>
-    <p>
-        Once a Battle starts, Stride sends the following to <strong>stride-battles-api</strong>,
-        a server we operate ourselves and that is entirely separate from the analytics server
-        described below:
-    </p>
-    <ul>
-        <li>The <strong>display name</strong> you chose, shown to your opponent</li>
-        <li>Your <strong>Battle step count</strong> — steps taken since you accepted that
-            specific Battle, never your daily HealthKit total or the count shown elsewhere
-            in the app</li>
-        <li><strong>Timestamps</strong> for that Battle — when it started, when it ends, and
-            when your step count was last synced — used to run the Battle and show both
-            sides an accurate, up-to-date race</li>
-        <li>Your <strong>anonymous per-install identity</strong> — a user ID, device ID, and
-            device secret generated automatically the first time you play a Battle, and
-            reused for every Battle after that. This is used only to authenticate your
-            requests and let both sides see the same race; it is not a password, and it is
-            never linked to your real name, email, or Apple ID.</li>
-        <li>Your device's <strong>push token</strong>, an anonymous identifier Apple assigns
-            your install, sent once you register for notifications so our server can alert
-            you about Battle activity (for example, that your opponent has taken the lead).
-            It is used only to deliver Battle-related notifications — never sold, shared, or
-            used for advertising.</li>
-    </ul>
-    <p>
-        <strong>Never sent:</strong> raw HealthKit samples, calories, active energy, body
-        weight, distance, your GPS route, your precise location, or your daily step total. A
-        Battle score is a number derived on your device from the moment you accepted the
-        Battle — nothing more.
-    </p>
-    <p>
-        Because a Battle score is tied to your persistent anonymous identity across the
-        Battles you play, it is linked data in that sense — but it is never linked to your
-        real name, email, Apple ID, or any other Stride data. You can see your Battle history
-        in the app's History screen, and a Battle's data is only ever used to run that Battle
-        and show your own record of past Battles.
-    </p>
-    <p>
-        <strong>Retention and deletion:</strong> completed Battle records (display names,
-        scores, timestamps, and your anonymous identity) remain on our server indefinitely —
-        we do not currently run an automated process that deletes old Battles. If you'd like
-        your Battle history and identity deleted, email us at the address in "Contact Us"
-        below and we will remove it by hand.
-    </p>
-
-    <h2>Stride Companion</h2>
-    <p>
-        Stride Companion — "race your daily pace" — is the solo counterpart to a Step Battle.
-        It has no server at all: your pace curve is built from your own recent step history,
-        entirely on your device, using your existing HealthKit access. Nothing about
-        Companion — your pace, your progress, or that you use it — is ever transmitted
-        anywhere.
+        <strong>Your choice:</strong> in the EU, EEA, UK and Switzerland, Stride asks before
+        sending any analytics, and sends nothing unless you tap Allow. Everywhere else, analytics
+        are on by default. On any version from 1.3.4 onwards you can turn them off in Settings →
+        Privacy → Share Usage Data, which also deletes the analytics already collected from your
+        install. Settings → Privacy → Delete My Analytics Data deletes them without turning
+        analytics off. On earlier versions, email us and we will delete your analytics on request.
     </p>
 
     <h2>Feedback</h2>
     <p>
-        Stride has an in-app Feedback form (Settings → Send Feedback) so you can reach us
-        directly. If you use it, the message you type — plus your app version and iOS
-        version, so we can reproduce what you're describing — is sent to a server we operate
-        and relayed privately to us; it is not batched with usage analytics and never
-        includes your health, location, or Battle data. Nothing is sent unless you choose to
-        send it.
+        If you send a message with the in-app Feedback form, your text, app version and iOS
+        version go to our telemetry server. They are stored there and forwarded to our private
+        Slack workspace so that we can read and answer them. Nothing is sent unless you press Send.
     </p>
 
-    <h2>Apple Health</h2>
+    <h2>Slack</h2>
     <p>
-        Stride reads your daily step total from Apple Health so it can show your progress
-        on the Lock Screen tile and in the Dynamic Island. This access is <strong>read-only</strong> —
-        Stride never writes, modifies, or deletes any data in Apple Health. You can revoke
-        Health access at any time in Settings → Privacy & Security → Health.
+        We use Slack (Slack Technologies, USA) to receive operational alerts. Messages there
+        include: new Random Battle searches and invitation opt-ins, with display name, Battle
+        user ID, account age, Battle and win counts, Pro status, device count, preferences and
+        weekly goal; Random Battle reports, with both users' Battle IDs, the reason and the
+        reported display name; new installs, with device model and country; daily app opens,
+        with a shortened install ID; and feedback messages. Slack never receives Health data,
+        location or Battle scores.
     </p>
 
-    <h2>Location</h2>
+    <h2>Service providers and transfers</h2>
+    <ul>
+        <li><strong>Railway</strong>: hosts our Battle and telemetry servers and databases.</li>
+        <li><strong>Slack</strong>: internal alerts, as described above (United States).</li>
+        <li><strong>Apple</strong>: push notifications, Live Activities and App Store purchases.</li>
+        <li><strong>GitHub Pages</strong>: hosts this website.</li>
+    </ul>
     <p>
-        When you start a walk, Stride uses your location only to keep step and distance
-        tracking active while the app is in the background or the screen is locked. Location
-        data is processed entirely on your device to power the live Dynamic Island and Lock
-        Screen updates during a walk — it is never transmitted anywhere, stored after the
-        walk ends, or used for any other purpose.
+        Some of these providers are in the United States. Where EU or UK data protection law
+        applies, transfers rely on the providers' Standard Contractual Clauses or the EU–US Data
+        Privacy Framework.
     </p>
 
-    <h2>Where your data lives</h2>
+    <h2>Why we use your data (legal bases)</h2>
+    <ul>
+        <li><strong>To run Battles you join</strong>, including matching, scores, notifications and
+            Pro access: to provide the service you asked for (contract).</li>
+        <li><strong>To keep Battles safe</strong>, including reports, blocks, moderation and abuse
+            limits: our legitimate interest in a safe service, and in protecting other users.</li>
+        <li><strong>Analytics and operational alerts</strong>: our legitimate interest in
+            understanding how the app is used and fixing problems.</li>
+        <li><strong>Notifications and photos</strong>: your choice. You can turn notifications off
+            in iOS Settings and remove your photo at any time.</li>
+    </ul>
+
+    <h2>How long we keep it</h2>
+    <ul>
+        <li>Battle profile, Battle history, reports and purchase links: until you ask us to
+            delete them. We don't delete old Battles automatically yet.</li>
+        <li>Raw analytics events: 90 days. Install records and feedback: see above.</li>
+        <li>Slack messages: as long as our Slack workspace keeps them.</li>
+        <li>Database backups can contain deleted data until they expire.</li>
+    </ul>
+
+    <h2>Deleting your data</h2>
     <p>
-        Step counts, walk history, routes, and your daily goal are stored locally on your
-        iPhone. Nothing is synced to iCloud or any other service. The only data that ever
-        leaves your device is what's described above: your Step Battle display name, score,
-        timestamps, and push token (only if you join a Battle), anonymous usage analytics
-        (only if you leave it on), and a feedback message (only if you choose to send one).
+        From version 1.3.4, you can delete your Battle profile in the app: Settings → your Battle
+        profile → Delete Battle Profile. This deletes your name, photo, scores, settings, tokens,
+        transfer codes and the reports you filed. Past Battles stay in your opponents' history
+        without your name or photo, and you can't use the deleted identity again. You can also
+        remove just your photo there. On older versions, or if anything is left over, email us
+        and we will finish the deletion and confirm when it's done. Deleting the app does
+        <strong>not</strong> delete your Battle profile, because the identity stays in your
+        Keychain.
     </p>
 
-    <h2>Live Activities and Lock Screen</h2>
+    <h2>Your rights</h2>
     <p>
-        The Dynamic Island and Lock Screen tile are rendered on your device by iOS using
-        data Stride already has locally. This content never leaves your device.
+        Depending on where you live, you can ask us to access, correct, delete or export your
+        data, to restrict how we use it, or to stop using it. You can also object to analytics.
+        Email us and we will answer within one month. You can complain to your data protection
+        authority. In the EU, that is the authority in your country. In the UK, it is the ICO.
+        In Israel, it is the Privacy Protection Authority. California residents have the right
+        to know, delete and correct their data, and won't be treated differently for using these
+        rights. <strong>We do not sell or “share” personal information</strong>, as those words are
+        defined in the CCPA, and we don't use it for targeted advertising.
     </p>
 
-    <h2>Children's Privacy</h2>
+    <h2>Security</h2>
     <p>
-        Stride does not knowingly collect any data from anyone, including children.
+        All connections use HTTPS. Device secrets and transfer codes are stored only as hashes,
+        and your Battle credentials are kept in the iOS Keychain. No system is perfectly secure.
+        If a breach affects you, we will tell you and the relevant authorities as the law requires.
     </p>
 
-    <h2>Changes to This Privacy Policy</h2>
+    <h2>Children</h2>
     <p>
-        If a future feature ever changes any of the above, this policy will be updated
-        before that feature ships, with the effective date revised.
+        Stride is not directed at children under 13. Random Battles, which connect you with
+        people you don't know, are for users aged 13 and over, and 16 and over in the EU and UK.
+        If you believe a child has given us personal data, contact us and we will delete it.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+        We will update this policy before we release any change to the data we collect, and we
+        will change the date at the top. For significant changes, we will also tell you in the app.
     </p>
 
     <div class="contact">
