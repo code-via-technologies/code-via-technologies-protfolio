@@ -67,51 +67,149 @@
 </head>
 <body>
     <h1>Privacy Policy for Slimreel</h1>
-    <p class="last-updated">Effective July 2026</p>
+    <p class="last-updated">Last updated: November 3, 2026</p>
 
     <div class="highlight">
-        <strong>Quick summary:</strong> Slimreel has no accounts and no servers. Slimreel
-        processes video entirely on your device and makes zero network calls of any kind.
+        <strong>Quick summary:</strong> Slimreel compresses video entirely on your device. Your
+        videos are never uploaded. There are no accounts, no ads and no in-app purchases. If you
+        allow it when the app first opens, Slimreel sends a small set of usage statistics, tied
+        to a random install ID rather than to you. You can turn that off at any time in Settings.
     </div>
 
-    <h2>What we collect</h2>
+    <h2>Who we are</h2>
     <p>
-        <strong>Nothing.</strong> Slimreel does not collect, transmit, or sell any personal
-        data. The app makes no network calls of any kind — no analytics SDK, no crash
-        reporting, and no advertising SDK.
+        Slimreel is published by Code VIA Technologies ("we", "us"), run by Tom Weiss, an
+        independent developer based in Israel. We are responsible for the personal data
+        described here (the "controller" under European data protection law, and the database
+        owner under Israel's Privacy Protection Law). You can reach us at the email address at
+        the end of this policy.
+    </p>
+    <p>
+        No law requires you to give us any personal data. Slimreel works fully with usage
+        statistics turned off.
     </p>
 
     <h2>Your videos</h2>
     <p>
-        Slimreel does not require an account. Videos you choose to compress are read from,
-        and — if you choose to save the result — written back to, your device's Photos
-        library using Apple's on-device <code>PhotosPicker</code> and PhotosKit APIs.
-        Slimreel never uploads a video anywhere; all compression happens locally on your
-        device using on-device video processing.
+        When you pick a video, Slimreel receives only that video, through Apple's
+        <code>PhotosPicker</code>. It has no access to the rest of your photo library. Compression
+        happens on your device. If you save the result, Slimreel adds it to your Photos library as
+        a new video; it never changes or deletes your originals. Your videos, their file names
+        and their contents are never sent to us or to anyone else.
     </p>
 
-    <h2>Purchases</h2>
+    <h2>Usage statistics</h2>
     <p>
-        Purchases (Slimreel Pro) are handled entirely by Apple's StoreKit. Slimreel never
-        sees or stores your payment information.
+        When Slimreel first opens, it asks whether you want to share usage statistics. Nothing is
+        sent, and no install ID is created, until you answer. If you allow it, Slimreel sends a
+        short, fixed list of events to a server we operate:
+    </p>
+    <ul>
+        <li><code>first_launch</code></li>
+        <li><code>app_open</code>: with a flag for whether it was a cold start</li>
+        <li><code>feature_used</code>: currently only that a compression finished</li>
+        <li><code>opt_out</code>: recorded when you turn statistics off</li>
+    </ul>
+    <p>
+        Alongside each event we record a random ID generated on your device (not an Apple device
+        identifier, and not shared with any other app), plus app version, iOS version, device
+        model (e.g. "iPhone16,2"), language, and your 2-letter country. There are no free-text
+        fields. The ID doesn't carry your name or email and isn't linked to any account, but
+        because it is a persistent identifier it still counts as personal data.
+    </p>
+    <p>
+        We do not store IP addresses; an IP is hashed with a key that rotates daily, used only to
+        rate-limit abuse, and then discarded. Statistics never go to an ad network or an
+        analytics SDK. To keep an eye on the service, our server also posts a short alert to our
+        private Slack workspace when a new install is first seen, with the device model, iOS
+        version, app version and country (not the install ID). Nothing is sold or shared.
+    </p>
+    <p>
+        You can turn statistics off at any time in Settings → Privacy. Turning them off stops new
+        events and asks our server to delete the events and install record for your install. You
+        can also tap "Delete My Analytics Data" to erase what was collected without turning
+        statistics off. The deletion request needs an internet connection; if you think it didn't
+        go through, email us.
     </p>
 
-    <h2>Where your data lives</h2>
+    <h2>Purchase</h2>
     <p>
-        Slimreel does not store your videos anywhere except your device's own Photos
-        library. Nothing is synced to iCloud or any other service by Slimreel, and nothing
-        leaves your device.
+        Slimreel is a paid app with no in-app purchases. You buy it from Apple, and Apple handles
+        payment and refunds. We never see your payment information, and the app sends no
+        purchase data to us.
+    </p>
+
+    <h2>Service providers</h2>
+    <ul>
+        <li><strong>Railway</strong>: hosting the server that receives usage statistics.</li>
+        <li><strong>Slack</strong>: receiving the new-install alerts described above, in our private workspace.</li>
+        <li><strong>Apple</strong>: selling and delivering the app.</li>
+    </ul>
+
+    <h2>International transfers</h2>
+    <p>
+        Railway and Slack are based in the United States and may process data there. Where data
+        protection law requires it, these transfers rely on the European Commission's standard
+        contractual clauses or the EU-U.S. Data Privacy Framework, as provided in each
+        provider's data processing terms. You can ask us for more information about these
+        safeguards.
+    </p>
+
+    <h2>How long we keep data</h2>
+    <ul>
+        <li>Raw events: 90 days.</li>
+        <li>The summary record for an install (first and last seen, app and iOS version, device
+            model, language, country): 13 months after the install was last active.</li>
+        <li>After a deletion request, a one-way digest of the install ID, so late events from
+            that install aren't stored again.</li>
+        <li>Slack alerts: for as long as our Slack workspace keeps messages. They are not
+            removed by an in-app deletion request; email us if you want them removed.</li>
+    </ul>
+
+    <h2>Why we use your data (legal bases)</h2>
+    <p>
+        We use usage statistics to understand how Slimreel is used and what to improve. We do so
+        only with your consent, given when the app first asks; you can withdraw it at any time in
+        Settings. Keeping the service secure and preventing abuse (the rate-limiting described
+        above) is in our legitimate interests.
+    </p>
+
+    <h2>Your rights</h2>
+    <p>
+        Depending on where you live, you can ask us to access the data we hold about you, correct
+        it, delete it, give you a copy in a portable format, restrict how we use it, or stop using
+        it (object). You can withdraw consent at any time. Email us at the address below; we reply
+        within one month. Because the data isn't tied to your name, we may need your install's
+        details to find it.
+    </p>
+    <p>
+        If you're unhappy with how we handle your data, please tell us first. You also have the
+        right to complain to a data protection authority, such as the supervisory authority in
+        your EU country, the UK Information Commissioner's Office, or Israel's Privacy
+        Protection Authority.
+    </p>
+
+    <h2>California residents</h2>
+    <p>
+        If you allow usage statistics, we collect these categories of personal information for the
+        purposes above: identifiers (a random install ID), internet or app activity (usage
+        events), and approximate location (country). We don't sell or "share" personal
+        information for cross-context behavioral advertising. You have the right to know, delete
+        and correct your personal information, and we won't discriminate against you for
+        exercising these rights. Email us to make a request.
     </p>
 
     <h2>Children's Privacy</h2>
     <p>
-        Slimreel does not knowingly collect any data from anyone, including children.
+        Slimreel is not directed at children under 13, and we do not knowingly collect personal
+        information from them. If you believe a child's install has sent us usage statistics,
+        contact us and we will delete it.
     </p>
 
     <h2>Changes to This Privacy Policy</h2>
     <p>
-        If a future feature ever changes any of the above, this policy will be updated
-        before that feature ships, with the effective date revised.
+        If a future version changes any of the above, this policy will be updated before that
+        version ships, with the date above revised.
     </p>
 
     <div class="contact">
