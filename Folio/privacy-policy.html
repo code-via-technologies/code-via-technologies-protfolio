@@ -73,10 +73,12 @@
         <strong>Quick summary:</strong> Folio works without an account, and has no advertising.
         Without an account, your notes stay on your device and, if you enable iCloud, sync
         privately through your own Apple account. If you choose to sign in to a Folio account
-        (to share notes or back them up), the notes in that account are stored on servers we
+        (to share notes or back them up), the notes and to-dos in that account are stored on servers we
         operate so they can sync between your devices and the people you share with. If you are a
-        Folio Pro user and choose to connect an AI assistant, the to-dos and notes it works with
-        are also sent to that assistant's provider, under its own terms. This is optional. See
+        Folio Pro user and choose to connect an AI assistant (the app calls this Folio AI), the
+        to-dos it reads are sent to that assistant's provider, a separate company that handles
+        them under its own terms, and what it adds is saved in your account. This is optional
+        and off until you approve it. See
         <a href="#connected-ai-assistants">"Connected AI assistants"</a>. Separately,
         the iPhone, iPad and Mac app sends usage analytics, tied to a random install ID rather
         than your name: on by default, except in the EU, EEA, UK and Switzerland where it asks
@@ -100,8 +102,8 @@
 
     <h2>What we collect</h2>
     <p>
-        <strong>Without a Folio account: none of your notes.</strong> We cannot see your notes,
-        photos, or attachments. That content never leaves your device except through your own
+        <strong>Without a Folio account: none of your notes or to-dos.</strong> We cannot see your
+        notes, to-dos, photos, or attachments. That content never leaves your device except through your own
         iCloud sync.
     </p>
     <p>
@@ -147,7 +149,8 @@
         analytics as linked to you for that reason.
     </p>
     <p>
-        We do not store IP addresses, even in logs; an IP is hashed with a key that rotates
+        We do not store IP addresses in our own database or logs (the request logs our hosting
+        provider keeps are described under "Service providers"); an IP is hashed with a key that rotates
         daily, used only to rate-limit abuse, and then discarded. Raw events are deleted after 90
         days. A summary record per install (when it was first and last seen, app, iOS version and
         device model, language, country, how many times the app was opened, and whether it made a
@@ -184,7 +187,8 @@
             verified email address. If you use Sign in with Apple and hide your email, we only
             receive Apple's relay address.</li>
         <li><strong>Notes and to-dos in your Folio account:</strong> the text, checklists, photos, files and
-            folders of notes and to-dos you keep in your Folio account library or share, including any
+            folders of notes and to-dos you keep in your Folio account library or share, including
+            the due dates, reminder settings and labels of to-dos, any
             location you add to a note and any audio or video file you attach, plus who last
             edited each note and a recent history of changes so your devices can sync.</li>
         <li><strong>Invitations you send:</strong> the email address you invite, an optional
@@ -225,14 +229,16 @@
             us. Apple's handling of iCloud data is described in
             <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's own privacy policy</a>.</li>
         <li><strong>On our servers, if you use a Folio account.</strong> Your account and the
-            notes in it are stored in a database we operate, hosted by Railway in the European
+            notes and to-dos in it are stored in a database we operate, hosted by Railway in the European
             Union (the Netherlands).</li>
         <li><strong>In your Google backup, on Android.</strong> If Android backup is turned on
             in your phone's settings, Android includes Folio's notes and attachments in your
             Google device backup and device-to-device transfers. Google handles that backup under
             your Google account; we can't see it. Your Folio sign-in is never included.</li>
         <li><strong>With an AI assistant you connect.</strong> The to-dos it reads, and anything
-            you ask it to handle, are held by its provider under its own terms.</li>
+            you ask it to handle, are held by its provider under its own terms, in whichever
+            countries that provider uses. See "International transfers" and
+            <a href="#connected-ai-assistants">"Connected AI assistants"</a>.</li>
     </ul>
 
     <h2>Service providers</h2>
@@ -241,7 +247,12 @@
         <li><strong>Google Firebase Authentication</strong>: signing you in with Google or Apple.</li>
         <li><strong>Google Firebase Cloud Messaging</strong> and <strong>Apple Push Notification
             service</strong>: delivering push notifications to your devices.</li>
-        <li><strong>Railway</strong>: hosting our servers and database.</li>
+        <li><strong>Railway</strong>: hosting our servers and database. Railway's network edge
+            keeps its own technical logs of the requests it routes to our servers, which can
+            include the time, the web address requested, the response status, and the IP
+            address and app the request came from. Railway keeps them for a limited period that
+            it sets, then deletes them. We don't put the content of your notes, to-dos or images
+            in web addresses, so these logs don't contain it.</li>
         <li><strong>Apple and Google</strong>: confirming Folio Pro purchases made in their stores.</li>
         <li><strong>Google ML Kit</strong> (Android): running Enhance with AI on your phone. It
             sends Google diagnostics when you use the feature, as described under "AI features".</li>
@@ -260,9 +271,21 @@
         Where data protection law requires it, these transfers rely on the European
         Commission's standard contractual clauses or the EU-U.S. Data Privacy Framework, as
         provided in each provider's data processing terms. You can ask us for more information
-        about these safeguards. When you connect an AI assistant, the provider may process data in
-        countries outside your own. Those transfers are between you and the provider and are not
-        covered by our safeguards.
+        about these safeguards.
+    </p>
+    <p>
+        Connected AI assistants are different. When you connect one, our servers send the to-dos
+        it reads, and our replies to the changes it asks for, to the provider you chose. These
+        providers are mostly based in the United States and may process data there or in other
+        countries. They are not our service providers and we have no contract with them, so the
+        safeguards described above do not cover that data. If you live in the EU, the rest of
+        the European Economic Area, the UK or Switzerland, this means your to-dos may go to a
+        country whose laws do not protect personal data to the same standard as yours, and the
+        provider may not be covered by an adequacy decision or by the EU-U.S. Data Privacy
+        Framework: it may not be bound by equivalent rules, public authorities there may be able
+        to access the data, and it may be harder for you to use your rights. We send the data only on your explicit
+        permission, given in the app for that connection, and we stop when you disconnect. Read
+        the provider's own privacy policy to see where it processes data and how it protects it.
     </p>
 
     <h2>Sharing notes</h2>
@@ -276,8 +299,11 @@
     <h2 id="connected-ai-assistants">Connected AI assistants</h2>
     <p>
         Folio Pro users can connect an AI assistant, such as Claude, ChatGPT, Grok or Cursor, to their Folio
-        account. This is optional. Folio works fully without it. Nothing is connected unless you
-        approve it in the Folio app. Connecting needs a Folio account and Folio Pro.
+        account. In the app this feature is called Folio AI. This is optional. Folio works fully
+        without it. Nothing is connected unless you
+        approve it in the Folio app. Connecting needs a Folio account and Folio Pro. Folio AI
+        arrives with Folio 1.9.0 and may not be switched on for your account or your version of
+        the app yet; this section describes how it works once it is.
     </p>
 
     <h3>What is shared, and when</h3>
@@ -288,15 +314,20 @@
     <ul>
         <li><strong>See your to-dos:</strong> the assistant can receive each to-do's title,
             the first 500 characters of its details, due date, reminder setting, completed
-            status, labels, and its Folio ID. It does not receive attachments.</li>
-        <li><strong>Add and change your to-dos:</strong> the assistant sends us the new or
-            changed to-do text. We save it in your account. To-dos it adds or edits show the
+            status, labels, its Folio ID and, if an assistant added or changed it, that
+            assistant's name. It does not receive attachments.</li>
+        <li><strong>Add and change your to-dos:</strong> the assistant sends us new to-dos and
+            changes to existing ones, such as new text, a due date, a reminder or marking a
+            to-do complete. We save them in your account. To-dos it adds or edits show the
             assistant's name. It can also attach images to a to-do (see "Images from an
             assistant" below).</li>
         <li><strong>Create new notes:</strong> the assistant sends us a title and text, and
             optionally images, and we save a new note in your account.</li>
         <li><strong>Delete your to-dos:</strong> off unless you turn it on. Only some
-            assistants can ask for it. A deleted to-do can be restored for 7 days.</li>
+            assistants can ask for it. A to-do an assistant deletes does not go to Trash. For 7
+            days it can be restored, by asking a connected assistant that has this permission
+            to restore it. There is no restore button in the Folio app. After 7 days it cannot
+            be restored.</li>
     </ul>
     <p>
         The assistant cannot read your existing notes. It cannot see notes that are shared with
@@ -332,12 +363,13 @@
     <h3>Which providers</h3>
     <p>
         At the time of writing, assistants Folio recognises are Claude (from Anthropic), ChatGPT
-        and Codex (from OpenAI), Grok (from xAI) and Cursor. Codex is recognised only through
+        and Codex (from OpenAI), Grok (from xAI) and Cursor (from Anysphere). Codex is recognised only through
         its official connection identity. You can also connect other apps that support the
         same connection standard (MCP). Other local apps, such as Claude Code, are shown as
         "an app on this computer". Apps Folio cannot verify can only read your to-dos. Folio shows you the
         name and address of the app before you approve. We will update this page before we
-        add any new assistant.
+        add any new assistant. Folio is not affiliated with, or endorsed by, any of these
+        companies; their names are their own trademarks.
     </p>
 
     <h3>What the provider does with it</h3>
@@ -347,7 +379,8 @@
         privacy policies, not ours. They may keep it, and they may use it to train their
         models. Folio does not control this. We cannot see what they hold and cannot delete it
         for you. To see or delete it, contact the provider. Disconnecting stops new sharing. It
-        does not remove what the provider already received.
+        does not remove what the provider already received. Read the provider's terms and
+        privacy policy before you connect.
     </p>
     <p>
         The provider is not our service provider. It is an independent company that you chose
@@ -370,7 +403,8 @@
             ID of the to-do, note or image. It never holds an image or its file name. It also
             holds a scrambled (keyed, one-way) fingerprint of the request. We use it for 2
             minutes to stop duplicates, but it stays in the log row for the full 90 days. It
-            does not hold titles or text. We keep the log for 90 days.</li>
+            does not hold titles or text. We keep the log for 90 days. The app does not show
+            this log; you can ask us for a copy.</li>
         <li><strong>Sign-in tokens:</strong> stored only as one-way hashes. Access lasts 1
             hour and renewal up to 30 days, never past the connection. They are deleted when
             you disconnect, and removed within a day after they expire.</li>
@@ -389,8 +423,8 @@
             (the app's key, when, and a reason). It holds nothing about you. We keep an entry
             until we remove it.</li>
         <li><strong>Restore copy of a deleted to-do:</strong> if an assistant deletes a to-do,
-            we keep an encrypted copy of it for 7 days so you can restore it. It is removed
-            when restored or after 7 days.</li>
+            we keep an encrypted copy of it for 7 days so that it can be restored (see "Delete
+            your to-dos" above). It is removed when restored or after 7 days.</li>
         <li><strong>Usage limits:</strong> counters of how many requests an assistant made, and
             how many images and bytes of images it added in the last hour, kept for 2 days.
             They hold no content.</li>
@@ -404,30 +438,57 @@
         To-dos and notes an assistant added are ordinary content in your account. They are kept
         and deleted like the rest of it.
     </p>
+    <p>
+        Our connection service does not store IP addresses and does not write the content of
+        requests to its logs. Our hosting provider's network edge records request metadata,
+        such as the time, the address requested, the response status and the IP address, for
+        its own limited period, as it does for all Folio account traffic (see "Service
+        providers").
+    </p>
 
     <h3>How to disconnect</h3>
     <p>
         Open Folio, go to Settings, then Connected apps. Choose Disconnect next to an app, or
         Disconnect all. The assistant stops working straight away. You can also remove Folio
         in the assistant itself. If you stop having Folio Pro, connections pause, and are
-        removed after 30 days. To delete data the provider already has, contact the provider.
+        removed after 30 days. Disconnecting is how you withdraw the permission you gave. To
+        delete data the provider already has, contact the provider.
     </p>
 
     <h3>Why we do this (legal basis)</h3>
-    <!-- STAGING NOTE (remove before publish): wording below is FOR LAWYER REVIEW (draft section 2 / open question 2). -->
     <p>
-        We connect an assistant and send it data because you ask
-        us to, in order to provide the feature you chose (performance of our contract with
-        you). You also give your explicit permission in the app for each connection. We keep
-        the connection record, activity log and restore copy to run the feature safely, to
-        prove what you approved, and to prevent abuse (our legitimate interests).
+        <strong>Sending your to-dos to an assistant: your consent.</strong> We send data to an
+        assistant only if you allow it. You do that in the Folio app, separately for each
+        connection, by turning on the third-party AI permission, which is off by default, and
+        approving. Because to-dos are free text, that permission also covers anything
+        sensitive you have written in them, so leave out of your to-dos anything you don't want
+        the provider to have. It also covers the transfer to the provider's country described
+        under "International transfers". Your consent lasts until you disconnect, and at most
+        90 days, after which you must approve the connection again. You can withdraw it at any time by
+        disconnecting. Withdrawing does not undo sharing that already happened.
+    </p>
+    <p>
+        <strong>Saving what an assistant adds: our contract with you.</strong> To-dos, notes
+        and images an assistant adds are stored and synced as part of your Folio account,
+        like the rest of your content. The 7-day restore copy of a to-do an assistant deletes
+        is kept for the same reason, so that it can be restored.
+    </p>
+    <p>
+        <strong>Records about a connection: our legitimate interests.</strong> We keep the
+        connection record, activity log and limits to keep the feature secure,
+        to prevent abuse, and to be able to show what you approved. You can object by
+        emailing us.
     </p>
 
     <h2>Notifications and Live Activities</h2>
     <p>
-        Note reminders and Lock Screen Live Activities are scheduled and rendered on your
-        device. Reminders are scheduled on your device. Items in your Folio account, and items an
-        assistant you connect adds or reads, pass through our servers.
+        Reminders and Lock Screen Live Activities are scheduled and shown by your device.
+        Without a Folio account, their content never leaves your device except via your own
+        iCloud sync. If a note or to-do is in your Folio account, its content, due date and
+        reminder setting are stored on our servers and sync through them, like the rest of
+        your account. That includes to-dos and reminders a connected AI assistant adds or
+        changes: the assistant sends them to our servers, we save them in your account, and
+        your devices then schedule the reminder themselves.
     </p>
     <p>
         If you use a Folio account, we send push notifications through Apple and Google. When
@@ -478,8 +539,8 @@
     <ul>
         <li><strong>Trash:</strong> notes you delete from your Folio account are permanently
             removed from our servers 30 days after they go to Trash, or right away if you choose
-            "Delete permanently". A to-do that an AI assistant deletes keeps an encrypted restore
-            copy for 7 days, so you can restore it.</li>
+            "Delete permanently". To-dos do not go to Trash. For a to-do that an AI assistant deletes, we keep an
+            encrypted restore copy for 7 days, so that an assistant you allow can restore it.</li>
         <li><strong>Deleting your account:</strong> you can delete your Folio account in the
             app's account settings. This permanently removes the notes, folders and files you
             own, your invitations, purchase records, device tokens, AI assistant connections and
@@ -506,13 +567,14 @@
     <ul>
         <li><strong>To provide Folio to you</strong> (performance of our contract with you):
             your account, syncing and backing up the notes in your account, sharing,
-            notifications, and confirming Folio Pro purchases. If you connect an AI assistant, we
-            send it data because you ask us to and give your permission in the app; we keep a
-            record of the connection and an activity log to run the feature safely, to prove
-            what you approved, and to prevent abuse. See
+            notifications, confirming Folio Pro purchases, and saving the to-dos and notes
+            that an AI assistant you connected adds.</li>
+        <li><strong>Your consent:</strong> sending your to-dos to an AI assistant you connect.
+            You give it in the app for each connection and withdraw it by disconnecting. See
             <a href="#connected-ai-assistants">"Connected AI assistants"</a>.</li>
         <li><strong>Our legitimate interests:</strong> keeping Folio secure, preventing abuse
-            and handling reports and blocks, understanding how the app is used through usage
+            and handling reports and blocks, keeping records of AI assistant connections,
+            understanding how the app is used through usage
             analytics (in the EU, EEA, UK and Switzerland, only with your consent), and reading feedback you send. You can object at any time; for analytics,
             turning them off in Settings stops collection.</li>
         <li><strong>Legal obligations:</strong> keeping records we are required to keep and
@@ -524,7 +586,10 @@
         Depending on where you live, you can ask us to access the data we hold about you, correct
         it, delete it, give you a copy in a portable format, restrict how we use it, or stop using
         it (object). Where we rely on your consent, you can withdraw it at any time. You can
-        export your notes from the app yourself, and delete your account in the app. To access or
+        export your notes from the app yourself, and delete your account in the app. If you
+        connected an AI assistant, you withdraw your consent by disconnecting it in Settings,
+        then Connected apps, and you can ask us for a copy of your connection records and
+        activity log. To access or
         delete data held by an AI assistant's provider, contact that provider. For anything
         else, email us at the address below; we reply within one month. We may need to confirm
         that the request comes from you.
@@ -542,9 +607,13 @@
         purposes described above: identifiers (account and install IDs, email address), customer
         records (name), commercial information (Folio Pro purchases), internet or app activity
         (usage analytics), approximate location (country) and precise location only when you add
-        it to a note, the content of notes and to-dos in your account, and, if you connect an AI assistant, the
-        to-dos and notes it works with. We don't sell or "share"
-        personal information for cross-context behavioral advertising, and we don't use
+        it to a note, the content of notes and to-dos in your account, and, if you connect an AI
+        assistant, records of that connection. We disclose personal information to the service
+        providers listed above. If you connect an AI assistant, we also disclose the to-dos it
+        reads to the provider you chose. We do that only because you direct us to, we receive
+        nothing in return, and it is not a sale or "sharing" of personal information. We don't
+        sell personal information, we don't "share" it
+        for cross-context behavioral advertising, and we don't use
         sensitive personal information to infer characteristics about you. You have the right to
         know, delete and correct your personal information, and we won't discriminate against you
         for exercising these rights. Email us to make a request; an authorized agent can make one
@@ -555,7 +624,9 @@
     <p>
         Folio is not directed at children under 13, and we do not knowingly collect personal
         information from them. If you believe a child has created a Folio account, contact us
-        and we will delete it.
+        and we will delete it. Connecting an AI assistant needs a Folio account, so the minimum
+        age in our <a href="terms.html">Terms of Service</a> applies to it. AI providers set
+        their own minimum ages, which can be higher.
     </p>
 
     <h2>Changes to This Privacy Policy</h2>
