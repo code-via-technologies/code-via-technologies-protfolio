@@ -394,9 +394,9 @@
         <li><strong>Usage limits:</strong> counters of how many requests an assistant made, and
             how many images and bytes of images it added in the last hour, kept for 2 days.
             They hold no content.</li>
-        <!-- STAGING NOTE (remove before publish): the draft's optional bullet for the keyed per-IP
-             hash (kept 1 day) is omitted because FOLIO_CONNECT_PER_IP_LIMITS is off by default.
-             Add it if that flag is turned on. -->
+        <li><strong>Connection-service limits:</strong> a keyed one-way hash of the IP address
+            (the key changes every day), to limit abuse of the connection service, kept for 1
+            day.</li>
     </ul>
     <p>
         We delete expired records automatically, every minute. If you delete your Folio
