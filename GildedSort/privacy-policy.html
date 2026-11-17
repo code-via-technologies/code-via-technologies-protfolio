@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Gilded Sort handles on-device progress, usage analytics, Google advertising, and Apple purchases.">
+  <title>Gilded Sort Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #faf7ee;
+      --ink: #193b3c;
+      --muted: #4c6260;
+      --teal: #123637;
+      --cream: #f9f0da;
+      --gold: #e9c57d;
+      --line: #d8d2c0;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 system-ui, sans-serif; }
+    a { color: #195f5c; text-underline-offset: 0.2em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    .skip {
+      position: absolute;
+      inset: 0 auto auto 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--paper);
+      transform: translateY(-150%);
+    }
+    .skip:focus { transform: translateY(0); }
+    .header { background: var(--teal); color: var(--cream); }
+    .shell { width: min(70rem, 100%); margin-inline: auto; padding-inline: clamp(1rem, 5vw, 3rem); }
+    .nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.5rem; padding-block: 1rem; }
+    .nav a { color: inherit; padding-block: 0.25rem; }
+    .nav [aria-current="page"] { color: var(--gold); }
+    .nav .brand { margin-inline-end: auto; font: 1.35rem Georgia, serif; text-decoration: none; }
+    h1, h2 { margin: 0; line-height: 1.12; font-family: Georgia, serif; font-weight: 400; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.25rem); letter-spacing: -0.035em; }
+    h2 { font-size: clamp(1.45rem, 3.5vw, 2rem); }
+    p { margin: 0.75rem 0 0; }
+    .article { max-width: 53rem; padding-block: clamp(2.5rem, 7vw, 5rem); }
+    .article section { padding-block-start: 1.6rem; margin-block-start: 1.6rem; border-top: 1px solid var(--line); }
+    .intro { color: var(--muted); font-size: 1.12rem; margin-block: 1rem 0; }
+    .date { color: var(--muted); font-size: 0.92rem; }
+    ol, ul { margin-block: 0.75rem 0; padding-inline-start: 1.4rem; }
+    li + li { margin-block-start: 0.4rem; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+    .footer { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1.5rem; padding-block: 1.25rem; }
+    .footer p { margin: 0; }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <nav class="shell nav" aria-label="Main">
+      <a class="brand" href="index.html">Gilded Sort</a>
+      <a href="support.html">Support</a>
+      <a aria-current="page" href="privacy-policy.html">Privacy policy</a>
+    </nav>
+  </header>
+  <main id="main" class="shell article">
+    <h1>Gilded Sort Privacy Policy</h1>
+    <p class="date">Effective <time datetime="2026-11-17">November 17, 2026</time></p>
+    <p class="intro">Gilded Sort is published by Code VIA Technologies. Your progress is saved on your device. You can turn off usage analytics and request deletion in the game’s Settings. Google provides eligible ads and advertising privacy controls. Apple processes purchases.</p>
+
+    <section>
+      <h2>Data stored on your device</h2>
+      <p>Your board, undo history, numbered-level progress, daily results, and settings are stored locally. Gilded Sort works without a game account and keeps saved boards on your device. Removing the app can remove local progress. To request deletion of usage data sent to our server, use the in-app control before uninstalling.</p>
+    </section>
+
+    <section>
+      <h2>Usage analytics</h2>
+      <p>Usage analytics are on by default. We use them to see which features work well, understand how people use the game, and improve it. Events include first launch and app opens, puzzle starts and completions, daily play, undo and restart, hint use, ad impressions and rewards, views of the purchase option, and verified purchases or restores.</p>
+      <p>These events contain a random identifier for this app installation, event IDs and timestamps, the app and iOS versions, the device model, and language and country or region from device settings. Purchase events can include the product ID, Apple transaction ID, and whether the event was a purchase or a restore. Gilded Sort generates its own installation identifier and uses it for analytics. Events contain no name, email address, precise location, or payment credentials.</p>
+      <p>Our analytics service is hosted on Railway. The service receives an IP address when the app connects. For abuse prevention, the application uses a hash with a daily rotating key and keeps raw addresses out of analytics records. Infrastructure providers may process connection and security logs to operate their services.</p>
+    </section>
+
+    <section id="analytics-choices">
+      <h2>Analytics choices and deletion</h2>
+      <p>In Gilded Sort’s Settings, turn off <strong>Share usage analytics</strong> to stop collection and request deletion of existing data for the installation. Choose <strong>Delete usage data</strong> to request deletion while keeping your current sharing preference. If sharing stays on, new events can be collected after deletion finishes.</p>
+      <p>Deletion removes installation-linked events, purchase telemetry, and the installation record from the active analytics database after server confirmation. If the app cannot connect, it keeps the request pending and retries. New analytics collection pauses until deletion finishes. We keep a hash of the deleted installation identifier to reject old requests that might otherwise recreate the deleted records.</p>
+      <p>Routine cleanup removes raw events after 90 days, installation records after 13 months without activity, and client-reported purchase records after 25 months. Earlier deletion is available through Settings. Summary counts without installation identifiers can remain. Apple manages its own purchase records, and Google handles data it collects for advertising under its own policies.</p>
+    </section>
+
+    <section id="advertising">
+      <h2>Google advertising and consent</h2>
+      <p>The free game can display banner ads, full-screen ads between puzzles, and optional videos that reward you with a hint. Google AdMob provides ads and Google’s User Messaging Platform presents applicable consent messages. Depending on region, permissions, and choices, Google and its advertising partners may process:</p>
+      <ul>
+        <li>IP address and approximate location, including location inferred from the IP address</li>
+        <li>Device or advertising identifiers, including IDFA when Apple tracking permission is granted</li>
+        <li>App and device information, diagnostic data, and performance information</li>
+        <li>Ads shown, ad interactions such as video views, and other app interactions</li>
+        <li>Advertising consent choices and information needed to manage those choices</li>
+      </ul>
+      <p>Google and its partners can use this information to deliver and measure ads, improve their services, and prevent fraud. Where permitted, they can use it to personalize ads and track activity across apps or websites. Eligible ads may still be served and measured if you decline personalization or tracking.</p>
+      <p>Choose <strong>Advertising privacy choices</strong> in the game’s Settings when available. Manage Apple’s tracking permission in iPhone Settings → Privacy &amp; Security → Tracking. Usage analytics have their own controls in the game’s Settings.</p>
+      <p>Read <a href="https://policies.google.com/privacy">Google’s privacy policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from apps that use its services</a>.</p>
+    </section>
+
+    <section>
+      <h2>Apple purchases</h2>
+      <p>Apple processes the one-time Remove Ads purchase. Gilded Sort verifies the purchase through StoreKit so you can use and restore it. Apple handles your card and payment credentials. When you share usage analytics, purchase events may include the information described above.</p>
+      <p>Remove Ads removes banner and between-puzzle ads and gives you hints without watching a video. Manage usage analytics and deletion separately in Settings. See <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>.</p>
+    </section>
+
+    <section>
+      <h2>Support and privacy requests</h2>
+      <p>If you email us, we use your email address and the information you send to answer your request. You can contact us to ask about the information we hold, request deletion, or raise a privacy concern. We may need more information to find the relevant installation or verify your request.</p>
+      <p>Email <a href="mailto:tom.weiss.t@gmail.com?subject=Gilded%20Sort%20privacy">tom.weiss.t@gmail.com</a> with “Gilded Sort” in the subject. Leave out passwords and payment information.</p>
+    </section>
+
+    <section>
+      <h2>Changes to this policy</h2>
+      <p>We’ll update this page and its effective date when our data practices change.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="shell footer">
+      <p>© 2026 Code VIA Technologies</p>
+      <p><a href="../index.html">All apps</a></p>
+    </div>
+  </footer>
+</body>
+</html>
