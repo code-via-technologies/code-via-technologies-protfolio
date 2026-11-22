@@ -28,9 +28,12 @@
     <p>When you choose to add or update a pass in Apple Wallet, Pass Studio sends that pass’s fields, code,
       and derived artwork over HTTPS to our signing service, hosted by Railway. This can include contact,
       ticket, travel, or membership details that you entered. Original photo files stay in your local library.
-      The service uses the pass contents to sign and return that pass. It processes those contents in memory
-      and does not save or log them. The signing service keeps the request’s IP address and a request count
-      briefly in memory to limit abuse, with expired entries cleared on an hourly schedule.</p>
+      Our signing application processes the pass contents in memory to sign and return the pass,
+      then discards them.</p>
+    <p>Railway records HTTP request metadata, including the source IP address, client user agent, request path,
+      time, and response status, to operate and troubleshoot the service. Railway makes these logs available
+      for seven days under our current hosting plan. Our signing application also keeps the request’s IP address
+      and a request count in memory to limit abuse, with expired entries cleared on an hourly schedule.</p>
     <p>When you add a signed pass, Apple Wallet manages its copy under
       <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 
