@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pass Studio Privacy Policy</title>
+  <title>Wallet Press Privacy Policy</title>
   <style>
     body { margin: 0; color: #1e2924; background: #f5f2ea; font: 1rem/1.65 system-ui, sans-serif; }
     main { max-width: 42rem; margin: auto; padding: 2.5rem 1.25rem; }
@@ -14,23 +14,30 @@
 </head>
 <body>
   <main>
-    <h1>Pass Studio Privacy Policy</h1>
-    <p>Pass Studio does not require an account. The app contains no advertising or analytics tracking.</p>
+    <h1>Wallet Press Privacy Policy</h1>
+    <p>Updated 25 November 2026. Tom Weiss, trading as Code Via Technologies in Israel, operates Wallet Press
+      (previously Pass Studio) and is responsible for the personal data described here.
+      Contact <a href="mailto:tom.weiss.t@gmail.com">tom.weiss.t@gmail.com</a>.</p>
+    <p>Wallet Press does not require an account. The app contains no advertising or analytics tracking.</p>
 
     <h2>Your designs, camera, and photos</h2>
-    <p>Pass Studio stores your saved cards, codes, notes, and original artwork in its local library.
-      It does not sync that library to a Pass Studio account or server.
+    <p>Wallet Press stores your saved cards, codes, notes, and original artwork in its local library.
+      It does not sync that library to a Wallet Press account or server.
       Your device’s backup settings may apply to local app data.</p>
-    <p>If you choose to scan a code, Pass Studio requests camera access and reads the code on your iPhone.
+    <p>If you choose to scan a code, Wallet Press requests camera access and reads the code on your iPhone.
       If you use Photos, the app receives the images you select. You can revoke camera access in iPhone Settings.</p>
 
     <h2>Adding to Apple Wallet</h2>
-    <p>When you choose to add or update a pass in Apple Wallet, Pass Studio sends that pass’s fields, code,
-      and derived artwork over HTTPS to our signing service, hosted by Railway. This can include contact,
+    <p>Exporting is optional. Wallet signing sends pass fields, codes and derived artwork over HTTPS to our signing service.
+      In versions with an export review, you choose the optional details and see what will be sent before confirming.
+      Earlier Pass Studio builds start signing when you tap Add or Update. They can include notes, extra fields,
+      email and phone even when the contact QR omits those details. The Apple Wallet confirmation appears after signing.
+      A pass can include contact,
       ticket, travel, or membership details that you entered. Original photo files stay in your local library.
       Our signing application processes the pass contents in memory to sign and return the pass,
       then discards them.</p>
-    <p>Railway records HTTP request metadata, including the source IP address, client user agent, request path,
+    <p>The existing PassJar signing service, used by earlier builds and the iPhone preview, runs on Railway.
+      Railway records HTTP request metadata, including the source IP address, client user agent, request path,
       time, and response status, to operate and troubleshoot the service. Railway makes these logs available
       for seven days under our current hosting plan. Our signing application also keeps the request’s IP address
       and a request count in memory to limit abuse, with expired entries cleared on an hourly schedule.</p>
@@ -38,23 +45,45 @@
       <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.</p>
 
     <h2>Widgets, Live Activities, and sharing</h2>
-    <p>The widget and Live Activity use a local summary and a small illustration of the selected card.
-      Its title, photo, or logo can be visible on the Home Screen, Lock Screen, or Dynamic Island.
+    <p>To let you choose a saved card, the app makes card summaries and available thumbnails accessible
+      to its widget on this device. The widget displays the card you select. A sharing session may also
+      show the role and company on a business card. The title, photo, logo and company can be visible
+      to someone looking at your Home Screen, Lock Screen, or Dynamic Island.
       You can choose another card, remove the widget, or end the sharing session.
-      If you tap Share or show your code to someone, the recipient or app you choose can receive the information you share.</p>
+      If you share a full image, the recipient can see everything in that image, including details outside a code.
+      A recipient who scans a contact code receives its selected contact fields.</p>
 
     <h2>Subscriptions</h2>
-    <p>Apple handles payment through the App Store. Pass Studio checks your verified subscription status on your device.
+    <p>Apple handles payment through the App Store. Wallet Press checks your verified subscription status on your device.
+      When the dedicated Wallet Press signing service is used, it also receives Apple-signed transaction evidence
+      and, when needed, renewal evidence to verify your subscription. It uses the original transaction identifier
+      to limit signing requests for the subscription within an hourly window. Entries expire after the window and
+      are cleared when new requests are processed or the service restarts.
       We do not receive your payment card details. You can manage or cancel the subscription in your Apple Account settings.</p>
 
     <h2>Delete your data or contact us</h2>
-    <p>Use <strong>Delete card</strong> in Card details to remove a saved card. You can also delete Pass Studio
+    <p>Use <strong>Delete card</strong> in Card details to remove a saved card. You can also delete Wallet Press
       to remove its local library from the device. Remove a pass added to Apple Wallet separately in Wallet.</p>
-    <p>Email <a href="mailto:tom.weiss.t@gmail.com?subject=Pass%20Studio%20privacy">tom.weiss.t@gmail.com</a>
+    <p>These public support and privacy pages are hosted on GitHub Pages. GitHub records the IP address
+      of visitors for security. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a>.</p>
+    <p>Email <a href="mailto:tom.weiss.t@gmail.com?subject=Wallet%20Press%20privacy">tom.weiss.t@gmail.com</a>
       with a privacy question or a request to access, correct, or delete personal information held in support correspondence.
-      We use the email address and information you send to handle and follow up on your request.</p>
+      We use the email address and information you send to handle and follow up on your request.
+      Tom deletes the support email once the issue is resolved. Please cover private details and scannable codes
+      before attaching a screenshot.</p>
+    <h2>Why we process data and your rights</h2>
+    <p>We use the information you send to provide the export or assistance you request. We use limited
+      technical records to protect the service and prevent misuse. Where the GDPR applies, we rely on
+      performance of the requested service for exports and our legitimate interests in responding to requests
+      and keeping the service secure. Card design and local storage work without sending a pass to the signer.
+      Only include other people’s details or images when you have permission to use them.</p>
+    <p>GitHub, Railway, Apple and our email provider may process information outside your country.
+      You can contact Tom to ask where your information is processed, about transfer safeguards,
+      or to request access, correction or deletion. Depending on where you live, you may also have rights
+      to restrict processing, object, obtain a portable copy or complain to your local data protection authority.
+      To remove local copies from your device or Wallet, use the steps above.</p>
 
-    <p><a href="support.html">Pass Studio Support</a></p>
+    <p><a href="support.html">Wallet Press Support</a></p>
   </main>
 </body>
 </html>
