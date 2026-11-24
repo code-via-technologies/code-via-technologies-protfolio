@@ -32,8 +32,9 @@
       In versions with an export review, you choose the optional details and see what will be sent before confirming.
       Earlier Pass Studio builds start signing when you tap Add or Update. They can include notes, extra fields,
       email and phone even when the contact QR omits those details. The Apple Wallet confirmation appears after signing.
-      A pass can include contact,
-      ticket, travel, or membership details that you entered. Original photo files stay in your local library.
+      Earlier builds could send contact, ticket, travel or membership details that you entered.
+      The dedicated Wallet Press service is intended for your own business and custom cards.
+      Event, membership and boarding designs stay in the app when using this version. Original photo files stay in your local library.
       Our signing application processes the pass contents in memory to sign and return the pass,
       then discards them.</p>
     <p>The existing PassJar signing service, used by earlier builds and the iPhone preview, runs on Railway.
@@ -46,7 +47,9 @@
 
     <h2>Widgets, Live Activities, and sharing</h2>
     <p>To let you choose a saved card, the app makes card summaries and available thumbnails accessible
-      to its widget on this device. The widget displays the card you select. A sharing session may also
+      to its widget on this device. In the updated app, the picker lists card names and types.
+      Unselected thumbnails require an unlocked device. The widget can keep the selected card’s thumbnail
+      available while the phone is locked. A sharing session may also
       show the role and company on a business card. The title, photo, logo and company can be visible
       to someone looking at your Home Screen, Lock Screen, or Dynamic Island.
       You can choose another card, remove the widget, or end the sharing session.
@@ -57,7 +60,9 @@
     <p>Apple handles payment through the App Store. Wallet Press checks your verified subscription status on your device.
       When the dedicated Wallet Press signing service is used, it also receives Apple-signed transaction evidence
       and, when needed, renewal evidence to verify your subscription. It uses the original transaction identifier
-      to limit signing requests for the subscription within an hourly window. Entries expire after the window and
+      to limit signing requests for the subscription within an hourly window and to generate a pass serial
+      so that you can update the same card. The pass does not contain your Apple transaction identifier.
+      Rate-limit entries expire after the window and
       are cleared when new requests are processed or the service restarts.
       We do not receive your payment card details. You can manage or cancel the subscription in your Apple Account settings.</p>
 
