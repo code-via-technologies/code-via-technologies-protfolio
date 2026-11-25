@@ -28,16 +28,14 @@
       If you use Photos, the app receives the images you select. You can revoke camera access in iPhone Settings.</p>
 
     <h2>Adding to Apple Wallet</h2>
-    <p>Exporting is optional. Wallet signing sends pass fields, codes and derived artwork over HTTPS to our signing service.
-      In versions with an export review, you choose the optional details and see what will be sent before confirming.
-      Earlier Pass Studio builds start signing when you tap Add or Update. They can include notes, extra fields,
-      email and phone even when the contact QR omits those details. The Apple Wallet confirmation appears after signing.
-      Earlier builds could send contact, ticket, travel or membership details that you entered.
-      The dedicated Wallet Press service is intended for your own business and custom cards.
-      Event, membership and boarding designs stay in the app when using this version. Original photo files stay in your local library.
-      Our signing application processes the pass contents in memory to sign and return the pass,
-      then discards them.</p>
-    <p>The existing PassJar signing service, used by earlier builds and the iPhone preview, runs on Railway.
+    <p>In Wallet Press 1.0 build 3, all five card types stay in the app unless you choose to share them.
+      This build cannot send a design, artwork or purchase proof to a signing service.
+      You can still open passes you already have in Apple Wallet.</p>
+    <p>Earlier Pass Studio builds could send contact, ticket, travel or membership details to the PassJar signer
+      when you tapped Add or Update, before Wallet displayed its confirmation. These could include notes, extra
+      fields, email and phone even when the contact QR omitted them. The signer processed the selected design’s
+      fields, code and rendered artwork in memory to return a signed pass. Original photo files stayed on the device.</p>
+    <p>The existing PassJar signing service, used by earlier builds and explicitly enabled developer previews, runs on Railway.
       Railway records HTTP request metadata, including the source IP address, client user agent, request path,
       time, and response status, to operate and troubleshoot the service. Railway makes these logs available
       for seven days under our current hosting plan. Our signing application also keeps the request’s IP address
@@ -58,23 +56,26 @@
 
     <h2>Subscriptions</h2>
     <p>Apple handles payment through the App Store. Wallet Press checks your verified subscription status on your device.
-      When the dedicated Wallet Press signing service is used, it also receives Apple-signed transaction evidence
-      and, when needed, renewal evidence to verify your subscription. It uses the original transaction identifier
-      to limit signing requests for the subscription within an hourly window and to generate a pass serial
-      so that you can update the same card. The pass does not contain your Apple transaction identifier.
-      Rate-limit entries expire after the window and
-      are cleared when new requests are processed or the service restarts.
+      The signing-disabled version checks Apple’s purchase information on the device to unlock paid features.
       We do not receive your payment card details. You can manage or cancel the subscription in your Apple Account settings.</p>
 
     <h2>Delete your data or contact us</h2>
     <p>Use <strong>Delete card</strong> in Card details to remove a saved card. You can also delete Wallet Press
-      to remove its local library from the device. Remove a pass added to Apple Wallet separately in Wallet.</p>
+      to remove its local library from the device. Delete card also clears its stored Wallet update dates in build 3. Open the updated app to let it clean up
+      records for previously deleted cards. Removing the app removes its library, but iOS can retain widget
+      Keychain records across uninstall until the next first launch. End any active sharing session and remove
+      its widget if you no longer want it displayed. Remove an installed Wallet pass separately in Wallet.
+      Deleting a card cannot recall a copy sent to someone else or erase an earlier iPhone backup.
+      Manage backups in your Apple Account or on the computer that made them.</p>
     <p>These public support and privacy pages are hosted on GitHub Pages. GitHub records the IP address
       of visitors for security. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub Pages data collection</a>.</p>
     <p>Email <a href="mailto:tom.weiss.t@gmail.com?subject=Wallet%20Press%20privacy">tom.weiss.t@gmail.com</a>
-      with a privacy question or a request to access, correct, or delete personal information held in support correspondence.
+      to ask about information in support correspondence or technical records, including a request for access,
+      correction or deletion. If you saw your information on someone else’s card, you can contact us too.
+      Include the approximate date and which service you used. Send only enough detail to locate the record.
       We use the email address and information you send to handle and follow up on your request.
-      Tom deletes the support email once the issue is resolved. Please cover private details and scannable codes
+      Google’s Gmail handles the support mailbox. Tom deletes the support email once the issue is resolved.
+      Mailbox deletion is separate from the provider’s Trash and backup retention. Please cover private details and scannable codes
       before attaching a screenshot.</p>
     <h2>Why we process data and your rights</h2>
     <p>We use the information you send to provide the export or assistance you request. We use limited
@@ -82,7 +83,7 @@
       performance of the requested service for exports and our legitimate interests in responding to requests
       and keeping the service secure. Card design and local storage work without sending a pass to the signer.
       Only include other people’s details or images when you have permission to use them.</p>
-    <p>GitHub, Railway, Apple and our email provider may process information outside your country.
+    <p>GitHub (public pages), Railway (earlier pass signing), Apple (purchases and Wallet) and Google (support mail) may process information outside your country.
       You can contact Tom to ask where your information is processed, about transfer safeguards,
       or to request access, correction or deletion. Depending on where you live, you may also have rights
       to restrict processing, object, obtain a portable copy or complain to your local data protection authority.
